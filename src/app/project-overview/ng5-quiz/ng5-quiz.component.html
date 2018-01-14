@@ -1,3 +1,90 @@
-<p>
-  ng5-quiz works!
-</p>
+<div class="project">
+    <div class="content-left">
+      <div class="info">
+        <h1 class="info__title">
+          Ng5 Quiz
+        </h1>
+        <h5 class="info__client">
+          Kunde
+        </h5>
+        <p class="info__client-name">
+          Open Source/Menschheit
+        </p>
+        <h5 class="info__date">12/2017 - jetzt</h5>
+        <p class="info__paragraph">
+            Angular 5 Quiz Applikation
+        </p>
+        <div class="info__link">
+          <a href="https://ng5-quiz.firebaseapp.com"
+          target="_blank" class="fa fa-link" aria-hidden="true"></a>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill__container">
+          <h5 class="skill__container-title">Kompetenzen</h5>
+            <p class="skill__container-items">
+              Angular CLI 1.6.1, Angular 5.1.1, Angular Material 5.0.1, Bootstrap 4,
+              JavaScript, TypeScript, Firebase 4.8.0
+            </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="images">
+        <div class="images__item images__item--wide"><img [src]="bigImagePath"></div>
+        <div class="images__item images__item--small"><img [src]="smallImagePathFirst"></div>
+        <div class="images__item images__item--small"><img [src]="smallImagePathSecond"></div>
+    </div>
+
+    <div class="sidemenu">
+      <mat-sidenav-container class="sidemenu__container">
+        <mat-sidenav align="end" mode="over" #sidenav class="sidemenu__sidenav-inside">
+          <a class="sidemenu__btn" routerLink="/projects/ng5-material" (click)="sidenav.toggle()">
+            <h3 class="sidemenu__btn-number">01</h3>
+            <h4 class="sidemenu__btn-title">Ng5 Material</h4>
+          </a>
+          <a class="sidemenu__btn" routerLink="/projects/ng4-books" (click)="sidenav.toggle()">
+            <h3 class="sidemenu__btn-number">02</h3>
+            <h4 class="sidemenu__btn-title">Ng4 Books</h4>
+          </a>
+          <a class="sidemenu__btn" routerLink="/projects/ng5-quiz" (click)="sidenav.toggle()">
+            <h3 class="sidemenu__btn-number">03</h3>
+            <h4 class="sidemenu__btn-title">Ng5 Quiz</h4>
+          </a>
+          <a class="sidemenu__btn" routerLink="/projects/ng5-talk-to-me" (click)="sidenav.toggle()">
+            <h3 class="sidemenu__btn-number">04</h3>
+            <h4 class="sidemenu__btn-title">Ng5 Talk To Me</h4>
+          </a>
+          <a class="sidemenu__btn" routerLink="/projects/ng5-share" (click)="sidenav.toggle()">
+            <h3 class="sidemenu__btn-number">05</h3>
+            <h4 class="sidemenu__btn-title">Ng5 Share</h4>
+          </a>
+          <a class="sidemenu__btn" routerLink="/projects/ng5-material" (click)="sidenav.toggle()">
+            <h3 class="sidemenu__btn-number">06</h3>
+            <h4 class="sidemenu__btn-title">Projekt 6</h4>
+          </a>
+        </mat-sidenav>
+        <div class="sidemenu__sidenav-outside">
+            <a (click)="sidenav.open()">
+              <h3 class="sidemenu__btn-number">01</h3>
+            </a>
+            <a (click)="sidenav.open()">
+                <h3 class="sidemenu__btn-number">02</h3>
+            </a>
+            <a (click)="sidenav.open()">
+                <h3 class="sidemenu__btn-number">03</h3>
+            </a>
+            <a (click)="sidenav.open()">
+                <h3 class="sidemenu__btn-number">04</h3>
+            </a>
+            <a (click)="sidenav.open()">
+                <h3 class="sidemenu__btn-number">05</h3>
+            </a>
+            <a (click)="sidenav.open()">
+                <h3 class="sidemenu__btn-number">06</h3>
+            </a>
+        </div>
+      </mat-sidenav-container>
+    </div>
+  </div>
+
