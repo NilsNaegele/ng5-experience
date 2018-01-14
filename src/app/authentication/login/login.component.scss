@@ -1,17 +1,17 @@
 @import './src/assets/scss/main';
 
-.home {
+.login {
     display: flex;
     flex-direction: column;
     padding: 50px;
-    background: $lightred;
+    background: $lightyellow;
     color: $white;
     height: calc(100vh - 243px);
     overflow: hidden;
 
     &__title {
-        font-size: 150px;
-        font-weight: 900;
+        font-size: 100px;
+        font-weight: 700;
         font-style: italic;
         margin: 30px 0;
     }
@@ -22,6 +22,10 @@
         font-style: italic;
         width: 520px;
         margin: 10px 0;
+    }
+
+    &__full-width {
+      width: 100%;
     }
 
 

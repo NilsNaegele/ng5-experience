@@ -1,0 +1,22 @@
+@import './src/assets/scss/main';
+
+@media screen and (max-width: 420px) and (min-width: 10px){
+    .home {
+        height: calc(100vh - 170px);
+        width: 100%;
+
+        &__title {
+            font-size: 59px;
+        }
+
+        &__paragraph {
+            font-size: 22px;
+            word-wrap: break-word;
+            width: 100%;
+        }
+
+        &__skew {
+            bottom: -130px;
+        }
+    }
+}

@@ -1,7 +1,9 @@
-import { AboutMeComponent } from './about-me/about-me.component';
-import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
+import { AboutMeComponent } from './about-me/about-me.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './authentication/login/login.component';
 
 import { ProjectComponent } from './project-overview/project/project.component';
 import { Ng5MaterialComponent } from './project-overview/ng5-material/ng5-material.component';
@@ -17,6 +19,9 @@ const appRoutes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'about-me', component: AboutMeComponent },
+
+  // login
+  { path: 'login', component: LoginComponent },
 
   // projects
   { path: 'projects/project-a', component: ProjectComponent },

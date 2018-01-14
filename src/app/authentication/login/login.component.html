@@ -1,0 +1,23 @@
+<div class="login">
+    <h1 class="login__title">
+      Anmelden
+    </h1>
+    <mat-card>
+    <form class="login__paragraph" (ngSubmit)="onLogin(loginForm)" #loginForm="ngForm">
+        <mat-form-field class="login__full-width">
+          <input matInput placeholder="Email" type="email" id="email" name="email" ngModel required>
+        </mat-form-field>
+        <mat-form-field class="login__full-width">
+          <input matInput placeholder="Passwort" type="password" id="password" name="password" ngModel required>
+        </mat-form-field>
+        <mat-card-actions>
+        <button mat-raised-button color="warn"
+                type="submit" [disabled]="!loginForm.valid">
+         Anmelden
+        </button>
+      </mat-card-actions>
+    </form>
+  </mat-card>
+    <div class="login__skew">
+    </div>
+  </div>

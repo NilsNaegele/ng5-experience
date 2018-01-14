@@ -3,6 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 
 import { MaterialModule } from './material/material.module';
+import { AuthenticationModule } from './authentication/authentication.module';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -52,6 +53,7 @@ import { HeaderComponent } from './shared/layouts/header/header.component';
     BrowserAnimationsModule,
     RouterModule,
     MaterialModule,
+    AuthenticationModule,
     AppRoutingModule
   ],
   providers: [],
