@@ -1,0 +1,26 @@
+@import "./src/assets/scss/main";
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    &__title {
+        background: $white;
+        font-size: 26px;
+        font-weight: 700;
+        padding: 21px 0;
+        color: $darkgrey;
+        outline: inherit;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            color: $lightred;
+        }
+
+        &-engine {
+            display: none;
+        }
+    }
+}

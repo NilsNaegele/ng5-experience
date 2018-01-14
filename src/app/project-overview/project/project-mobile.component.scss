@@ -1,0 +1,51 @@
+@import './src/assets/scss/main';
+
+@media screen and (max-width: 420px) and (min-width: 10px){
+    .project {
+        padding: 50px 50px 0 0;
+        margin-right: -90px;
+        height: 100vh;
+
+        .content-left {
+
+            .info {
+                &__paragraph {
+                    width: 75%;
+                }
+            }
+
+            .skill {
+                height: 130px;
+                padding: 0 0 20px 0;
+
+                &__container {
+
+                    &-items {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+
+        .images {
+            display: none;
+        }
+
+        .sidemenu {
+
+            &__sidenav-inside {
+                width: 435px;
+                padding: 20px 20px 20px 30px;
+                font-size: 27px;
+            }
+
+            &__sidenav-outside {
+                height: calc(100vh - 120px);
+            }
+
+            &__btn {
+                width: 330px;
+            }
+        }
+    }
+}

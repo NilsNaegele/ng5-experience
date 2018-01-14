@@ -1,0 +1,9 @@
+@media screen and (max-width: 1550px) and (min-width: 768px){
+    .image {
+        width: 480px;
+        
+        &__item {   
+            height: 500px;
+        }
+    }
+}

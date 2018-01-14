@@ -1,0 +1,30 @@
+@import './src/assets/scss/main';
+
+@media screen and (max-width: 420px) and (min-width: 10px){
+    .wrapper {
+        flex-flow: row-reverse;
+    }
+
+    .mat-drawer {
+        height: calc(100vh - -61px);
+        padding: 0 0 200px 0;
+        width: 460px;
+        margin-top: 98px;
+        align-items: center;
+    }
+
+    .wrapper .sidebar {
+        &__images {
+            flex-direction: row;
+            margin: 50px 0 0 75px;
+
+            & a {
+                display: block;
+
+                &::before {
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}
