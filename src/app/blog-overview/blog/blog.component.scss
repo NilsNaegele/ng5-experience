@@ -1,0 +1,74 @@
+@import './src/assets/scss/main';
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    color: $white;
+    position: relative;
+
+    &__header {
+        clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 75%,
+        0 100%
+        );
+        background: $purple;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 250px;
+
+        &-container {
+            margin: 0 0 0 120px;
+            text-align: justify;
+        }
+
+        &-date {
+            font-size: 16px;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        &-title {
+            font-size: 46px;
+            font-weight: 700;
+            margin: 0;
+        }
+    }
+
+    &__container {
+        width: 100%;
+        height: 100%;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &-paragraph {
+            color: $darkgrey;
+            width: 70%;
+
+            &--first {
+                margin-top: 40px;
+            }
+        }
+
+        &-header {
+            font-size: 24px;
+            font-weight: 700;
+            background-color: $purple;
+            color: $white;
+            text-align: center;
+            padding: 8px 12px;
+        }
+
+        &-image {
+            max-width: 70%;
+            margin: 25px 0;
+        }
+    }
+}

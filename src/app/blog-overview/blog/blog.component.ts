@@ -3,13 +3,17 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.css']
+  styleUrls: ['./blog.component.scss', './blog-mobile.component.scss']
 })
 export class BlogComponent implements OnInit {
+  loveImagePath: string;
 
-  constructor() { }
+  constructor() {
+    this.loveImagePath = '../../../assets/images/unconditionallove.jpg';
+  }
 
   ngOnInit() {
+
   }
 
 }

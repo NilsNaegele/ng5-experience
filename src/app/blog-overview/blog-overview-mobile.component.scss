@@ -1,0 +1,23 @@
+@import './src/assets/scss/main';
+
+@media screen and (max-width: 420px) and (min-width: 10px){
+  .blog-overview {
+      height: 100vh;
+      margin-right: -90px;
+
+      &__header {
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+
+          &-title {
+              font-size: 37px;
+              margin: -40px 0 0 30px;
+          }
+
+          &-searchbar {
+              margin: 26px 0 10px 30px;
+          }
+      }
+  }
+}

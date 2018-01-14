@@ -23,7 +23,7 @@ const appRoutes: Routes = [
   { path: 'projects/ng5-material', component: Ng5MaterialComponent },
   { path: 'projects/ng4-books', component: Ng4BooksComponent },
   { path: 'projects/ng5-talk-to-me', component: Ng5TalkToMeComponent },
-  { path: 'projects/ng5-share', component: Ng5ShareComponent },
+  { path: 'projects/ng5-machine-learning', component: Ng5ShareComponent },
   { path: 'projects/ng5-quiz', component: Ng5QuizComponent },
 
   // blog overview

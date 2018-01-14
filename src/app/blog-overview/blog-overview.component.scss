@@ -1,0 +1,89 @@
+@import './src/assets/scss/main';
+
+.blog-overview {
+  background-color: $darkgrey;
+  color: $white;
+  padding: 0;
+  height: calc(100vh - 142px);
+  overflow: hidden;
+
+  &__header {
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 75%,
+      0 100%
+    );
+    background: $purple;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
+
+    &-title {
+      font-size: 66px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0 0 0 120px;
+    }
+
+    &-searchbar {
+      height: 35px;
+      width: 248px;
+      margin: 0 200px 0 0;
+      padding: 5px 15px;
+      border: none;
+      background: $white;
+      color: $purple;
+    }
+  }
+
+  &__list {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &-item {
+      margin: 40px 15px 0 15px;
+      background: $purple;
+      height: 250px;
+      width: 250px;
+
+      &:hover {
+        background: $white;
+        cursor: pointer;
+      }
+
+      &:hover &-date{
+        color: $purple;
+      }
+
+      &:hover &-title {
+        color: $purple;
+      }
+
+      &:nth-of-type(even) {
+        margin-top: 150px;
+      }
+
+      &-date {
+        font-size: 14px;
+        font-weight: 400;
+        padding: 20px 20px 5px 20px;
+        font-style: italic;
+        color: $white;
+      }
+
+      &-title {
+        font-size: 26px;
+        font-weight: 900;
+        padding: 0 20px 20px 20px;
+        color: $white;
+      }
+    }
+  }
+}

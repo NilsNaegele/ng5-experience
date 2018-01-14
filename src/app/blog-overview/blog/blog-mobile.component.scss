@@ -1,0 +1,17 @@
+@import './src/assets/scss/main';
+
+@media screen and (max-width: 420px) and (min-width: 10px){
+    .blog {
+        margin-right: -80px;
+
+        &__header {
+            &-container {
+                margin:0 0 0 50px;
+            }
+
+            &-title {
+                font-size: 31px;
+            }
+        }
+    }
+}
