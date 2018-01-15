@@ -1,62 +1,32 @@
-<div class="blog">
-
+<div class="blog" *ngFor="let blog of blogs | async">
   <div class="blog__header">
     <div class="blog__header-container">
       <div class="blog__header-date">
-        14/01/2018
+          {{ blog.date | date:'dd.MM.yyyy'}}
       </div>
       <h1 class="blog__header-title">
-        Gegen Alle Widerstände
+            {{ blog.title }}
       </h1>
     </div>
   </div>
 
   <div class="blog__container">
     <p class="blog__container-paragraph blog__container-paragraph--first">
-      Vor vielen Jahren sah ich einen berühmten deutschen Fußballspieler im Fernsehen. Nationalspieler, Nr. 1 Torwart weltweit.
-      Andreas Köpke. Er wurde von Frankfurt nach Marseille transferiert. Um dort im Club zu spielen. Ich habe 3 Monate gebraucht
-      Ihn zu meinem Kunden zu machen. Als wir schließlich bei Ihm im Wohnzimmer in Cassis saßen sagte er: 'verbissen'. Ich
-      vermute er hat auch verbissen an sich und seiner Karriere als Weltelite Spieler gearbeitet.
+        {{ blog.firstParagraph }}
     </p>
 
     <h3 class="blog__container-header">
-      "Was kannst Du tun?"
+      "{{ blog.leadQuestion }}"
     </h3>
 
     <p class="blog__container-paragraph">
-      Wenn Du was willst im Leben mußt Du kämpfen und Dich an die Arbeit machen. Alles Menschen mögliche machen um Dein Ziel zu
-      erreichen. Sei stolz auf Dich, Dein Land, Deine Familie und Freunde. Sei sicher in allem was Du machst. Laß Dich nicht
-      ins Boxhorn jagen. Laß Dich nicht ablenken von Deinen Zielen und Träumen. Ich verspreche Dir Du kanns alle Deine Ziele
-      und Träume verwirklichen wenn Du die Mühe und Arbeit reinsteckst. Halte Dich von schlechter Gesellschaft fern. Es wird
-      Menschen geben die Dich negativ beeinflußen wollen. Die die Energie aus Dir raussaugen. Halte Abstand von solchen Elementen.
+        {{ blog.secondParagraph }}
     </p>
 
-    <img class="blog__container-image" [src]="loveImagePath">
+    <img class="blog__container-image" src="{{ blog.imagePath }}">
 
     <p class="blog__container-paragraph">
-      Man lebt nur einmal. Lebe jeden Moment als wäre es der Letzte. Nutze Dein Potential voll aus. Es gibt keine Grenzen, außer
-      die die Du Dir selber setzt. Ich habe alles mögliche im Leben ausprobiert. Jahrgangsbester an der Uni usw.. Meine Kommilitonen
-      sind alle etabliert und haben das schöne, wohlhabende, gesicherte Leben erreicht. Ich habe nichts vorzuweisen aber
-      das macht nichts. Das ist mein Lebensweg. Genau wie Du Deinen Lebensweg gehen wirst. Willst Du Erfolg, Ruhm, Reichtum,
-      Frauen, Justiz? Dann mußt Du was dafür tun. Es gibt keine Geschenke im Leben und man muss sich alles hart erarbeiten.
-      Sei Dankbar. Ich bin dankbar und lebe meinen Traum. Ich bin genau da wo ich jetzt sein will, ich mache genau dass was
-      ich machen will. Alles ist gut und das Leben ist schön. Positiv denken. Denke groß. Denke Positiv. Wachstum. Nicht
-      immer alles so Ernst nehmen. Es geht nicht immer um Leben oder Tod. In Frankreich haben die mir oft gesagt, ich müße
-      lernen zu leben. Faules Pack. Meine Schwester haben die dazu gebracht französin zu werden. Als französische Mitarbeiter
-      meine Firma beklaut haben und sich vom Acker gemacht haben, habe ich mein ganzes Netzwerk informiert. Daraufhin wurde ich ins Kommissariat eingeladen.
-      Der Neffe vom Kommisar war mit der Diebin verheiratet und ich sollte es doch unterlassen mein Netzwerk zu informieren.
-      Einschüchterungsversuch von dem faulen, Diebespack.
-      Die haben mich so weit gebracht dass ich gesagt habe ich bin Amerikaner um Diskussionen zu vermeiden. Ich habe dann nicht mehr deutsch gesprochen.
-      Ich habe meine Identität verheimlicht und mich geschämt für meinen Pass. Bin ich wirklich ein so böser Mensch, weil ich deutsch bin?
-      Mein ganzes Leben war ich als deutscher im Ausland. Ich war der Ausländer, der Fremde. Gegen alle Widerstände kämpfe ich.
-      Noch einmal: sei stolz auf Dich. Sei stolz auf Dein Land. Sei stolz auf Deine Familie. Sei Stolz auf Deine Freunde. Bringe Leistung.
-      Die sind alle neidisch auf Deutschland. Deutschland ist ein starkes Land. Warum? Weil Du stark bist. Weil wir alle stark sind. 16 Länder,
-      Ein Ergebnis. Für Deutschland. Für Europa.
-      Unser Land wurde mit viel Liebe und sorgfalt aufgebaut und wir sind verpflichtet alles zu geben so dass es Deutschland heute,
-      morgen und für immer gut gehen wird.
-      Das die zukünftigen Generationen auf ein solides Fundament bauen können.
-      Mein Land über alles in der Welt. Jetzt schaue Dir das Bild an.
-      Gruß an meine Brüder von der Polizei. Einen großen Dank für die Heldenarbeit die Ihr macht. Deutschland schützen.
+      {{ blog.thirdParagraph }}
     </p>
   </div>
 </div>

@@ -14,6 +14,9 @@ import { Ng5QuizComponent } from './project-overview/ng5-quiz/ng5-quiz.component
 
 import { BlogComponent } from './blog-overview/blog/blog.component';
 import { BlogOverviewComponent } from './blog-overview/blog-overview.component';
+import { BlogCreateComponent } from './blog-overview/blog-create/blog-create.component';
+
+import { AuthGuardService } from './shared/services/auth-guard.service';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -34,6 +37,7 @@ const appRoutes: Routes = [
   // blog overview
   { path: 'blogs', component: BlogOverviewComponent },
   { path: 'blog', component: BlogComponent },
+  { path: 'blog-create', component: BlogCreateComponent, canActivate: [AuthGuardService] },
 
   { path: '**', component: HomeComponent }
 

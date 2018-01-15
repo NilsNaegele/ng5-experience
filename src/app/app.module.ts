@@ -1,6 +1,15 @@
-import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+
+import { MAT_DATE_LOCALE } from '@angular/material';
+
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+import { environment } from '../environments/environment';
 
 import { MaterialModule } from './material/material.module';
 import { AuthenticationModule } from './authentication/authentication.module';
@@ -25,11 +34,17 @@ import { Ng5QuizComponent } from './project-overview/ng5-quiz/ng5-quiz.component
 import { BlogOverviewComponent } from './blog-overview/blog-overview.component';
 // blog posts
 import { BlogComponent } from './blog-overview/blog/blog.component';
+import { BlogCreateComponent } from './blog-overview/blog-create/blog-create.component';
 
 import { MenuComponent } from './shared/layouts/menu/menu.component';
 import { SidebarComponent } from './shared/layouts/sidebar/sidebar.component';
 import { FooterComponent } from './shared/layouts/footer/footer.component';
 import { HeaderComponent } from './shared/layouts/header/header.component';
+
+import { AuthenticationService } from './shared/services/authentication.service';
+import { AuthGuardService } from './shared/services/auth-guard.service';
+import { BlogService } from './shared/services/blog.service';
+
 
 @NgModule({
   declarations: [
@@ -44,6 +59,7 @@ import { HeaderComponent } from './shared/layouts/header/header.component';
     Ng5QuizComponent,
     BlogOverviewComponent,
     BlogComponent,
+    BlogCreateComponent,
     MenuComponent,
     SidebarComponent,
     FooterComponent,
@@ -51,12 +67,17 @@ import { HeaderComponent } from './shared/layouts/header/header.component';
   ],
   imports: [
     BrowserAnimationsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+    AngularFireDatabaseModule,
     RouterModule,
+    FormsModule,
     MaterialModule,
     AuthenticationModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AuthenticationService, AuthGuardService,
+              BlogService, {provide: MAT_DATE_LOCALE, useValue: 'de-DE'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

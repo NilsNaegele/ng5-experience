@@ -1,0 +1,48 @@
+<div class="create-blog">
+  <h1 class="create-blog__title">
+    Neuen Blog Erstellen
+  </h1>
+  <mat-card class="create-blog__bg-color">
+    <form class="create-blog__paragraph"
+        (ngSubmit)="onSend(blogForm); blogForm.reset();"
+        #blogForm="ngForm">
+      <mat-form-field class="create-blog__full-width">
+        <input matInput [matDatepicker]="picker" id="date" name="date" placeholder="Datum wählen" ngModel required>
+        <mat-datepicker-toggle matSuffix [for]="picker">
+        </mat-datepicker-toggle>
+        <mat-datepicker touchUi="true" #picker></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field class="create-blog__full-width">
+        <input matInput placeholder="Titel" type="text" id="title" name="title" ngModel required>
+      </mat-form-field>
+      <mat-form-field class="create-blog__full-width">
+        <textarea matInput placeholder="Erster Paragraph" type="text" id="firstParagraph" name="firstParagraph" ngModel required>
+            </textarea>
+      </mat-form-field>
+      <mat-form-field class="create-blog__full-width">
+          <input matInput placeholder="Leit Frage" type="text" id="leadQuestion"
+                 name="leadQuestion" ngModel required>
+        </mat-form-field>
+      <mat-form-field class="create-blog__full-width">
+          <textarea matInput placeholder="Zweiter Paragraph" type="text" id="secondParagraph" name="secondParagraph" ngModel required>
+              </textarea>
+        </mat-form-field>
+        <mat-form-field class="create-blog__full-width">
+            <input matInput placeholder="Bild Pfad" type="text" id="imagePath"
+                   name="imagePath" ngModel required>
+          </mat-form-field>
+        <mat-form-field class="create-blog__full-width">
+            <textarea matInput placeholder="Dritter Paragraph" type="text" id="thirdParagraph" name="thirdParagraph" ngModel required>
+                </textarea>
+          </mat-form-field>
+      <mat-card-actions>
+        <button mat-raised-button color="warn"
+                type="submit" [disabled]="!blogForm.valid">
+         Senden
+        </button>
+      </mat-card-actions>
+    </form>
+  </mat-card>
+  <div class="login__skew">
+  </div>
+</div>

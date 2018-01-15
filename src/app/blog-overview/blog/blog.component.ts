@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { BlogService } from './../../shared/services/blog.service';
+
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-blog',
@@ -6,14 +9,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog.component.scss', './blog-mobile.component.scss']
 })
 export class BlogComponent implements OnInit {
+  blogs: Observable<any[]>;
   loveImagePath: string;
 
-  constructor() {
-    this.loveImagePath = '../../../assets/images/unconditionallove.jpg';
+  constructor(private blogService: BlogService) {
+    // this.loveImagePath = '../../../assets/images/unconditionallove.jpg';
   }
 
   ngOnInit() {
-
+    this.blogs = this.blogService.getAllBlogs();
   }
 
 }
