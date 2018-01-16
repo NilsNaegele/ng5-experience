@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { BlogService } from './../../shared/services/blog.service';
 
 import { Observable } from 'rxjs/Observable';
@@ -9,15 +10,18 @@ import { Observable } from 'rxjs/Observable';
   styleUrls: ['./blog.component.scss', './blog-mobile.component.scss']
 })
 export class BlogComponent implements OnInit {
-  blogs: Observable<any[]>;
-  loveImagePath: string;
+  blogs: any[];
 
-  constructor(private blogService: BlogService) {
-    // this.loveImagePath = '../../../assets/images/unconditionallove.jpg';
+  constructor(private route: ActivatedRoute, private blogService: BlogService) {
   }
 
   ngOnInit() {
-    this.blogs = this.blogService.getAllBlogs();
+    this.getBlog();
+  }
+
+  getBlog(): void {
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.blogService.getBlog(id).subscribe(blog => this.blogs = blog);
   }
 
 }

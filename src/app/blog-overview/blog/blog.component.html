@@ -1,4 +1,4 @@
-<div class="blog" *ngFor="let blog of blogs | async">
+<div class="blog" *ngFor="let blog of blogs">
   <div class="blog__header">
     <div class="blog__header-container">
       <div class="blog__header-date">
@@ -23,7 +23,7 @@
         {{ blog.secondParagraph }}
     </p>
 
-    <img class="blog__container-image" src="{{ blog.imagePath }}">
+    <img class="blog__container-image" src="../../../assets/images/{{ blog.imagePath }}">
 
     <p class="blog__container-paragraph">
       {{ blog.thirdParagraph }}

@@ -25,4 +25,8 @@ export class BlogService {
     return this.db.list('/blogs').valueChanges();
   }
 
+  getBlog(id: number) {
+    return this.db.list('/blogs', ref => ref.orderByChild('id').equalTo(id)).valueChanges();
+  }
+
 }

@@ -36,7 +36,7 @@ const appRoutes: Routes = [
 
   // blog overview
   { path: 'blogs', component: BlogOverviewComponent },
-  { path: 'blog', component: BlogComponent },
+  { path: 'blog/:id', component: BlogComponent },
   { path: 'blog-create', component: BlogCreateComponent, canActivate: [AuthGuardService] },
 
   { path: '**', component: HomeComponent }

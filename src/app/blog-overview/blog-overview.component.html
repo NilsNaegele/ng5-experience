@@ -8,15 +8,16 @@
   </div>
 
   <div class="blog-overview__list">
-
-    <div routerLink="/blog" class="blog-overview__list-item">
+    <ng-container *ngFor="let blog of blogs | async">
+    <div routerLink="/blog/{{blog.id}}" class="blog-overview__list-item">
       <div class="blog-overview__list-item-date">
-        15/01/2018
+        {{ blog.date | date:'dd.MM.yyyy' }} ID: {{ blog.id }}
       </div>
       <div class="blog-overview__list-item-title">
-        Mein erster Angular Blog
+        {{ blog.title }}
       </div>
     </div>
+  </ng-container>
 
     <div class="blog-overview__list-item">
       <div class="blog-overview__list-item-date">
@@ -72,6 +73,22 @@
           </div>
           <div class="blog-overview__list-item-title">
             Mein achter Angular Blog
+          </div>
+        </div>
+        <div class="blog-overview__list-item">
+          <div class="blog-overview__list-item-date">
+            28/01/2018
+          </div>
+          <div class="blog-overview__list-item-title">
+            Mein neunter Angular Blog
+          </div>
+        </div>
+        <div class="blog-overview__list-item">
+          <div class="blog-overview__list-item-date">
+            30/01/2018
+          </div>
+          <div class="blog-overview__list-item-title">
+            Mein zehnter Angular Blog
           </div>
         </div>
   </div>
