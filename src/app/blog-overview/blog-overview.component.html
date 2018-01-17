@@ -11,7 +11,7 @@
     <ng-container *ngFor="let blog of blogs | async">
     <div routerLink="/blog/{{blog.id}}" class="blog-overview__list-item">
       <div class="blog-overview__list-item-date">
-        {{ blog.date | date:'dd.MM.yyyy' }} ID: {{ blog.id }}
+        {{ blog.date | date:'dd.MM.yyyy' }}
       </div>
       <div class="blog-overview__list-item-title">
         {{ blog.title }}
@@ -19,14 +19,6 @@
     </div>
   </ng-container>
 
-    <div class="blog-overview__list-item">
-      <div class="blog-overview__list-item-date">
-        16/01/2018
-      </div>
-      <div class="blog-overview__list-item-title">
-        Mein zweiter Angular Blog
-      </div>
-    </div>
     <div class="blog-overview__list-item">
         <div class="blog-overview__list-item-date">
           18/01/2018

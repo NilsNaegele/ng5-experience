@@ -7,10 +7,10 @@ export class BlogService {
 
   constructor(private db: AngularFireDatabase) { }
 
-  postBlog(date, title, firstParagraph, leadQuestion,
+  postBlog(id, date, title, firstParagraph, leadQuestion,
            secondParagraph, imagePath, thirdParagraph) {
     return firebase.database().ref().child('blogs/').push({
-        id: 1,
+        id: id,
         date: Date.now(),
         title: title,
         firstParagraph: firstParagraph,
@@ -27,6 +27,10 @@ export class BlogService {
 
   getBlog(id: number) {
     return this.db.list('/blogs', ref => ref.orderByChild('id').equalTo(id)).valueChanges();
+  }
+
+  getLastBlogEntry() {
+    return this.db.list('/blogs', ref => ref.limitToLast(1)).valueChanges();
   }
 
 }

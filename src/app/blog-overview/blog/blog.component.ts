@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { BlogService } from './../../shared/services/blog.service';
 
 import { Observable } from 'rxjs/Observable';
@@ -12,7 +12,9 @@ import { Observable } from 'rxjs/Observable';
 export class BlogComponent implements OnInit {
   blogs: any[];
 
-  constructor(private route: ActivatedRoute, private blogService: BlogService) {
+  constructor(private route: ActivatedRoute,
+              private router: Router,
+              private blogService: BlogService) {
   }
 
   ngOnInit() {
@@ -21,7 +23,13 @@ export class BlogComponent implements OnInit {
 
   getBlog(): void {
     const id = +this.route.snapshot.paramMap.get('id');
-    this.blogService.getBlog(id).subscribe(blog => this.blogs = blog);
+    console.log(id);
+    this.blogService.getBlog(id).subscribe(blog => {
+      this.blogs = blog;
+      if (this.blogs.length === 0) {
+        this.router.navigate(['blogs']);
+      }
+     });
   }
 
 }
