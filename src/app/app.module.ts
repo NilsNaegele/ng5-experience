@@ -44,6 +44,7 @@ import { HeaderComponent } from './shared/layouts/header/header.component';
 import { AuthenticationService } from './shared/services/authentication.service';
 import { AuthGuardService } from './shared/services/auth-guard.service';
 import { BlogService } from './shared/services/blog.service';
+import { SearchByPipe } from './shared/pipes/search-by.pipe';
 
 
 @NgModule({
@@ -63,7 +64,8 @@ import { BlogService } from './shared/services/blog.service';
     MenuComponent,
     SidebarComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    SearchByPipe
   ],
   imports: [
     BrowserAnimationsModule,
