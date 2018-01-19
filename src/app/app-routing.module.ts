@@ -16,6 +16,9 @@ import { BlogComponent } from './blog-overview/blog/blog.component';
 import { BlogOverviewComponent } from './blog-overview/blog-overview.component';
 import { BlogCreateComponent } from './blog-overview/blog-create/blog-create.component';
 
+import { BookComponent } from './book-overview/book/book.component';
+import { BookOverviewComponent } from './book-overview/book-overview.component';
+
 import { AuthGuardService } from './shared/services/auth-guard.service';
 
 const appRoutes: Routes = [
@@ -38,6 +41,10 @@ const appRoutes: Routes = [
   { path: 'blogs', component: BlogOverviewComponent },
   { path: 'blog/:id', component: BlogComponent },
   { path: 'blog-create', component: BlogCreateComponent, canActivate: [AuthGuardService] },
+
+  // books
+  { path: 'books', component: BookOverviewComponent },
+  { path: 'book/:id', component: BookComponent },
 
   { path: '**', component: HomeComponent }
 

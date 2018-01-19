@@ -104,4 +104,14 @@
       background-color: $purple;
     }
   }
+
+  &--yellow {
+    height: 34px;
+    width: 177px;
+    left: 30px;
+
+    &:hover {
+      background-color: $lightyellow;
+    }
+  }
 }

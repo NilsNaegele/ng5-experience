@@ -30,21 +30,24 @@ import { Ng5QuizComponent } from './project-overview/ng5-quiz/ng5-quiz.component
 // experience
 // ...
 
-// bog overview
 import { BlogOverviewComponent } from './blog-overview/blog-overview.component';
-// blog posts
 import { BlogComponent } from './blog-overview/blog/blog.component';
 import { BlogCreateComponent } from './blog-overview/blog-create/blog-create.component';
+
+import { BookOverviewComponent } from './book-overview/book-overview.component';
+import { BookComponent } from './book-overview/book/book.component';
 
 import { MenuComponent } from './shared/layouts/menu/menu.component';
 import { SidebarComponent } from './shared/layouts/sidebar/sidebar.component';
 import { FooterComponent } from './shared/layouts/footer/footer.component';
 import { HeaderComponent } from './shared/layouts/header/header.component';
 
+import { SearchByPipe } from './shared/pipes/search-by.pipe';
+
 import { AuthenticationService } from './shared/services/authentication.service';
 import { AuthGuardService } from './shared/services/auth-guard.service';
 import { BlogService } from './shared/services/blog.service';
-import { SearchByPipe } from './shared/pipes/search-by.pipe';
+import { BookService } from './shared/services/book.service';
 
 
 @NgModule({
@@ -61,6 +64,8 @@ import { SearchByPipe } from './shared/pipes/search-by.pipe';
     BlogOverviewComponent,
     BlogComponent,
     BlogCreateComponent,
+    BookOverviewComponent,
+    BookComponent,
     MenuComponent,
     SidebarComponent,
     FooterComponent,
@@ -79,7 +84,7 @@ import { SearchByPipe } from './shared/pipes/search-by.pipe';
     AppRoutingModule
   ],
   providers: [AuthenticationService, AuthGuardService,
-              BlogService, {provide: MAT_DATE_LOCALE, useValue: 'de-DE'}],
+              BlogService, BookService, {provide: MAT_DATE_LOCALE, useValue: 'de-DE'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

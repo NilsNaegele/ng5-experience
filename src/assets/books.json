@@ -1,0 +1,348 @@
+{
+  "-KuLRmxgPaTrlENJSnaX": {
+    "category": "angular4",
+    "description": "This book is a reformulation of the Angular documentation, that is the best source to learn Angular. More love and passion I will attempt to insert into this book as well as new code samples. This book is dedicated to the love of my life, Carmen. The smartest and most beautiful woman in the world. For all I do, I do for you. May you enjoy your life and be happy, content, in love, well protected with everything that is going on. I would like to thank you for the great work you do to grow the Angular Community worldwide and all the love and passion you put in Angular. God bless you my princess.  Architecture, Displaying Data, Template Syntax, Lifecycle Hooks, Component Interaction, Component Styles, Dynamic Components, Attribute Directives, Structural Directives, Pipes, Animations, User Input, Template-DRIVEN Forms, Form Validation, Reactive Forms, Dynamic Forms, Bootstrapping, NgModules, Dependency Injection, Hierarchical Injectors, DI in Action, HttpClient, Routing & Navigation, Testing. API ... Driven by Love && Passion For Angular ...",
+    "imageUrl": "https://rlv.zcache.com/angularjs_shield_logo_heart_sticker-r364aec9290c1496d9b93a8ec0e35dd12_v9w0n_8byvr_324.jpg",
+    "id": 1,
+    "title": "Angular 4 Love Affair"
+  },
+  "-KuLSNQt4yBNgqcW0LbQ": {
+    "category": "angular4",
+    "description": "It's time to learn Angular - one of the best frameworks for building modern and cross-platform applications. If you want to get up to speed in Angular as quickly as possible, this is the book that you will love!\n\nThe book dives straight into building a practical single-page application to explore all core concepts of Angular 4 such as Dependency Injection, Data Binding, Components, Events, Http Module, etc.\n\nThroughout the book, you'll also create many real-world features: CRUD operations, form validations, JWT authentication, etc.\n\nAlong the way, we'll learn more about TypeScript, ES6 and Laravel - one of the best PHP frameworks.\n\nLearn by doing!\n\nBy the end of this book, you'll gain a solid understanding of Angular 4 and how it interacts with a Laravel backend.\n\nLet's get the book and become a full stack developer!",
+    "imageUrl": "https://angularbooks.com/img/angular4book.png",
+    "id": 2,
+    "title": "Angular 4 Book: Learning Angular with Laravel 5"
+  },
+  "-KuLSqGp-oG1wkzH1Y8y": {
+    "category": "angular4",
+    "description": "Writing Your First Angular 4 Application 1 Binding Data to Components 1.5 TypeScript 2 Using Annotations and Types 2.5 Angular 4 Concepts - How Angular Works 3 Components, Controllers, and Views 3.5 Using the Built-in Components 4 Forms and Validations 5 Understanding Observables and RxJS 6 Data Architecture with Observables and RxJS 6.5 Data Architecture With Redux and Angular 7 Intermediate Redux with Angular 8 Dependency Injection and Services 9 Working with APIs and HTTP 10 Routing 11 Hybrid Apps: Porting An Angular 1 App to Angular 4 12 Writing Advanced Components 13 Understanding Lifecycle Hooks 13.5 Testing 14 Writing Mobile Apps with NativeScript",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51u%2BLtxQerL._SX258_BO1,204,203,200_.jpg",
+    "id": 3,
+    "title": "ng-book"
+  },
+  "-KuLU2H-HiDKvOZiao1V": {
+    "category": "angular4",
+    "description": "Two of the most popular frontend frameworks, Angular and Bootstrap, have undergone a major overhaul to embrace emerging web technologies so that developers can build cutting-edge web applications.\n\nInside this title you'll dive, fingers first, into the basics of both the tools, and once you're familiar with them, you'll move onto Bootstrap's new grid system and Angular's built-in directives. You'll then learn how to format output using Angular's pipes and how to make use of the built-in router to set up routes for all your components.\n\nWebpack will be your buddy to wrap up your project. Then, after throwing in some SASS to make things pretty, you'll learn how to validate the forms you've built and debug your application. Finally, you'll go on to learn how to obtain smooth transitioning from Bootstrap to Angular and then how to hook up with a server and use Firebase as the persistence layer.\n\nOnce you're done with this book, you'll not only have a lovely little e-commerce application running, but you'll also take with you the confidence to innovate and build your own applications with ease.",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/41zxyAUBqIL.jpg",
+    "id": 4,
+    "title": "Web Development with Angular 2 & Bootstrap 4"
+  },
+  "-KuLUbgd-lD4vPyplfw_": {
+    "category": "angular4",
+    "description": "The first chapter in the course is a quickstart where you dive straight into writing your first Angular application. We use the web editor plunker so you can get stuck in writing code ASAP.\n\nIn this quickstart you’ll get a 50,000 foot view of the major features of Angular v2+.\n\nThen chapter by chapter we go much deeper into each of these features. We first cover the theory, using plunker as much as possible so you can try out the code yourself in a browser. Then you’ll practice what you’ve learnt with either an online quiz or a set of flash cards.\n\nYou are going to learn all about:\n\nTypescript & ES6 Javascript.\n\nComponents & Binding\n\nDirectives\n\nDependency Injection & Services\n\nAngular Modules & Bootstrapping your Angular application.\n\nSPAs & Routing\n\nAngular CLI\n\nForms\n\nReactive Programming with RXJs\n\nHTTP\n\nTesting\n\nPackaging & Releasing",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51SRFX--KdL._SX260_.jpg",
+    "id": 5,
+    "title": "Angular 4 From Theory To Practice"
+  },
+  "-KuLUtuvRO9ukza3CTrz": {
+    "category": "angular4",
+    "description": "Angular is a platform that makes it easy to build applications with the web. Angular combines declarative templates, dependency injection, end to end tooling, and integrated best practices to solve development challenges. Angular empowers developers to build applications that live on the web, mobile, or the desktop. This documentation assumes that you are already familiar with JavaScript, and some of the tools from the latest standards such as classes and modules. The code samples are written using TypeScript. Most Angular code can be written with just the latest JavaScript, using types for dependency injection, and using decorators for metadata.",
+    "imageUrl": "https://angular.io/assets/images/logos/angular/angular.svg",
+    "id": 6,
+    "title": "Angular 4 Documentation: The Best Source"
+  },
+  "-KuO-UJerhvdmqAZbDJJ": {
+    "category": "angular2",
+    "description": "Angular 2 introduces an entirely new way to build applications. It wholly embraces all the newest concepts that are built into the next generation of browsers, and it cuts away all the fat and bloat from Angular 1. This book plunges directly into the heart of all the most important Angular 2 concepts for you to conquer. In addition to covering all the Angular 2 fundamentals, such as components, forms, and services, it demonstrates how the framework embraces a range of new web technologies such as ES6 and TypeScript syntax, Promises, Observables, and Web Workers, among many others.\n\nThis book covers all the most complicated Angular concepts and at the same time introduces the best practices with which to wield these powerful tools. It also covers in detail all the concepts you'll need to get you building applications faster. Oft-neglected topics such as testing and performance optimization are widely covered as well. A developer that reads through all the content in this book will have a broad and deep understanding of all the major topics in the Angular 2 universe.",
+    "imageUrl": "https://www.packtpub.com/sites/default/files/1923OS_5077_Angular%202%20Cookbook.jpg",
+    "id": 7,
+    "title": "Angular 2 Cookbook"
+  },
+  "-KuO00BWy-wQXF3lD9ej": {
+    "category": "angular2",
+    "description": "This book is a concise guide to Angular 2 Components and is based on the stable version of Angular 2. You will start with learning about the Angular 2 Components architecture and how components differ from Angular directives in Angular 1. You will then move on to quickly set up an Angular 2 development environment and grasp the basics of TypeScript. With this strong foundation in place, you will start building components.\n\nThe book will teach you, with an example, how to define component behavior, create component templates, and use the controller of your component. You will also learn how to make your components communicate with each other. Once you have built a component, you will learn how to extend it by integrating third-party components with it. By the end of the book, you will be confident with building and using components for your applications.",
+    "imageUrl": "https://dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/featured_book_block/2340OS_B05076_Angular%202%20Components.png",
+    "id": 8,
+    "title": "Angular 2 Components"
+  },
+  "-KuO08MOq9CnAq8nPTi5": {
+    "category": "angular2",
+    "description": "Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. For web, mobile web, native mobile and native desktop. Achieve the maximum speed possible on the Web Platform today, and take it further, via Web Workers and server-side rendering. Angular puts you in control over scalability. Meet huge data requirements by building data models on RxJS, Immutable.js or another push-model. Build features quickly with simple, declarative templates. Extend the template language with your own components and use a wide array of existing components. Get immediate Angular-specific help and feedback with nearly every IDE and editor. All this comes together so you can focus on building amazing apps rather than trying to make the code work. From prototype through global deployment, Angular delivers the productivity and scalable infrastructure that supports Google's largest applications.",
+    "imageUrl": "http://whatpixel.com/images/2016/08/angular2-homepage.jpg",
+    "id": 9,
+    "title": "Angular 2 Documentation: Passion"
+  },
+  "-KuO0cXxxUibM9k4uRdy": {
+    "category": "angular2",
+    "description": "AngularJS is a JavaScript framework that makes building web applications easier. It is used today in large-scale, high-traffic websites that struggle with under-performance, portability issues, as well as SEO unfriendliness, and complexity at scale.\n\nAngular 2 changes that.\n\nIt is the modern framework you need to build performant and robust web applications. “Switching to Angular 2” is the quickest way to get to grips with Angular 2 and will help you transition in to the brave new world of Angular 2.\n\nWe’ll start with an overview which sets the changes of the framework in context with version 1.x. After that, you will be taken on a TypeScript crash-course so we can take advantage of Angular 2 in its native, statically-typed environment. We’ll look at the new change-detection method in detail, how Directives and Components change how you create websites with Angular, the new Angular 2 router, and much more.\n\nBy the end of the book, you’ll be ready to start building quick and efficient Angular 2 applications that take advantage of all the new features on offer.",
+    "imageUrl": "https://d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/featured_book_block/IMG6201_0.jpg",
+    "id": 10,
+    "title": "Switching To Angular 2"
+  },
+  "-KuO1CKvI9XoSpdllBOZ": {
+    "category": "angular2",
+    "description": "Whether you're building web clients or full-featured SPAs, using the Angular 2 web framework is a liberating experience. Its declarative style makes it easy to define and add features without a lot of manually written boilerplate, and the fully integrated TypeScript language gives you the benefits of a statically typed language within the JavaScript ecosystem. Not to mention that adding Angular 2 and TypeScript to your skill set makes you a hot commodity.\n\nAbout the book\nAngular 2 Development with Typescript introduces Angular 2 to developers comfortable using AngularJS v1 or other web frameworks. You'll start by exploring how Angular 2 works in an online auction application. Along the way, you'll learn to use TypeScript to write type-aware classes, interfaces, and generics. This is a practical book that covers real-world development concerns like data and views, user interaction with forms, and communicating with servers, as well as testing and deploying your Angular 2 applications.\n\nWhat's inside\nDesign and build modular applications\nTranspile TypeScript into today's JavaScript\nUse modern JavaScript workflow tools like npm, Karma, and Webpack.",
+    "imageUrl": "https://yakovfain.files.wordpress.com/2015/05/angular_cover.png",
+    "id": 11,
+    "title": "Angular 2 Development with TypeScript"
+  },
+  "-KuO1SdtAjV9TNLUwnH6": {
+    "category": "angularjs",
+    "description": "AngularJS is a JavaScript-based framework that extends HTML, so you can create dynamic, interactive web applications in the same way you create standard static pages. Out of the box, Angular provides most of the functionality you'll need for basic apps, but you won't want to stop there. Intuitive, easy to customize, and test-friendly, Angular practically begs you to build more interesting apps.\n\nAbout the book\nAngularJS in Action teaches you everything you need to get started with AngularJS. As you read, you'll learn to build interactive single-page web interfaces, apply emerging patterns like MVVM, and tackle key tasks like communicating with back-end servers. All examples are supported by clear explanations and illustrations along with fully annotated code listings.\n\nWhat's inside\nGet started with AngularJS\nWrite your own components\nBest practices for application architecture\nProgressively build a full-featured application\nCovers Angular JS 1.3\nSample application updated to the latest version of Angular\nAbout the reader\nThis book assumes you know at least a little JavaScript. No prior exposure to AngularJS or other web frameworks is required.\n\nAbout the author\nLukas Ruebbelke is a full-time web developer and an active contributor to the AngularJS community.",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/41i01bB6BPL._SX396_BO1,204,203,200_.jpg",
+    "id": 12,
+    "title": "AngularJS In Action"
+  },
+  "-KuO1izUB_rKhb3p8nqy": {
+    "category": "angularjs",
+    "description": "If you want to get started with AngularJS, either as a side project, an additional tool, or for your main work, this practical guide teaches you how to use this meta-framework step-by-step, from the basics to advanced concepts. By the end of the book, you’ll understand how to develop a large, maintainable, and performant application with AngularJS.\nGuided by two engineers who worked on AngularJS at Google, you’ll learn the components needed to build data-driven applications, using declarative programming and the Model–view–controller pattern. You’ll also learn how to conduct unit tests on each part of your application.\nLearn how to use controllers for moving data to and from views\nUnderstand when to use AngularJS services instead of controllers\nCommunicate with the server to store, fetch, and update data asynchronously\nKnow when to use AngularJS filters for converting data and values to different formats\nImplement single-page applications, using ngRoute to select views and navigation\nDive into basic and advanced directives for creating reusable components\nWrite an end-to-end test on a live version of your entire application\nUse best practices, guidelines, and tools throughout the development cycle.",
+    "imageUrl": "https://covers.oreillystatic.com/images/0636920033486/lrg.jpg",
+    "id": 13,
+    "title": "AngularJS Up & Running"
+  },
+  "-KuO21AWoI0lbWqIlE9p": {
+    "category": "angularjs",
+    "description": "The main objective of this book is to address the best web development technologies on the market today. On the web, we are always splitting the systems development into two parts: server and client.\n\nOn the server, we will cover the programming language PHP 5.4, and the framework Laravel, in addition to the MySql database. We chose Laravel because it is a simple and powerful framework, with a growing acceptance in the market.\n\nOn the client, we have the Javascript language, which has consolidated its position as the best programming language for browsers. As a framework, we chose the AngularJS, which makes all the manipulation of data in forms and tables much easier. We also have the CSS, in which we use the Bootstrap framework to facilitate the development of web applications interface.\n\nEven with two different technologies, their integration is entirely possible and this will be the main theme discussed throughout the chapters. Note that we will not introduce the two technologies in a separate way, but always addressing how the technologies interact. The communication between them is RESTful, and we will be using it extensively for the development of our final application.\n\nAfter addressing the main concepts of both technologies, we will create a small blog that will illustrate ...",
+    "imageUrl": "https://s3.amazonaws.com/titlepages.leanpub.com/laravel-and-angularjs/hero?1454329546",
+    "id": 14,
+    "title": "AngularJS & Laravel"
+  },
+  "-KuO2DQCQqRfcu0Y1HfE": {
+    "category": "angularjs",
+    "description": "This book will teach you the inner workings of AngularJS by guiding you through implementing your own version of the framework from the ground up.\n\nEach feature is introduced by discussing what it's used for and why it's needed. The feature is then implemented step by step using test-driven development practices: By writing a failing test and then making it pass.\n\nThe six most important things you’ll learn\n\nHow all the major components of AngularJS work. Whether it's scopes, data binding, filters, directives, or dependency injection, you will learn not only how to use it, but also how it's actually implemented.\nHow an Angular application holds together. The book will demystify the mechanics of how and when different parts of your application are created and destroyed, as well as how they're connected with each other.\nThe performance characteristics of AngularJS. When you know how your framework is implemented, you know what it can and cannot do efficiently. You'll also know where to look when facing performance problems.\nHow to extend AngularJS. You'll learn all the extension points of Angular and how to use them.\nHow to write test-driven JavaScript. By using TDD to build your own implementation of Angular, you'll get into the flow of writing JavaScript code in a test-driven fashion.",
+    "imageUrl": "https://teropa.info/images/byoa/book_single.jpg",
+    "id": 15,
+    "title": "Build Your Own AngularJS"
+  },
+  "-KuO2UZN7kC4qurzZdz2": {
+    "category": "angularjs",
+    "description": "Packed with easy-to-follow recipes, this practical guide will show you how to unleash the full might of the AngularJS framework. Skip straight to practical solutions and quick, functional answers to your problems without hand-holding or slogging through the basics. Avoid antipatterns and pitfalls, and squeeze the maximum amount out of the most powerful parts of the framework, from creating promise-driven applications to building an extensible event bus. Throughout, take advantage of a clear problem-solving approach that offers code samples and explanations of components you should be using in your production applications.",
+    "imageUrl": "https://www.packtpub.com/sites/default/files/9781783283354.png",
+    "id": 16,
+    "title": "AngularJS Web Application Development"
+  },
+  "-KuO2s6_VRckP94CaO3P": {
+    "category": "angularjs",
+    "description": "AngularJS is an open-source JavaScript framework. Its goal is to develop MVC-based web applications and reduce the amount of JavaScript needed to make web applications functional.\n\nThe book will take the reader through the workflow of building an AngularJS app.\n\nThroughout the process of app creation, we will have a look at the different interaction points between design and development and the readers will learn how AngularJS helps both roles to build an application that works well, as well as how to create clean and maintainable front end markup and code. Use AngularJS DOM-based templating effectively and learn how it differs from other frameworks\nQuery and modify data in various backends and become proficient with the promise API\nQuickly create complex forms, taking full advantage of the 2-way data binding\nIntroduce navigation in your web application by relaying on the HTML5 History API\nManage dependencies with the AngularJS module and the Dependency Injection systems\nLocalize your web application to prepare it for an international audience\nSecure your web application from unauthorized users\nBuild a variety of AngularJS directives: widgets, validators, and wrapping 3rd party plugins.",
+    "imageUrl": "https://www.packtpub.com/sites/default/files/1820OS.jpg",
+    "id": 17,
+    "title": "Mastering Web Application Development with AngularJS"
+  },
+  "-KuO3GpkAl0hP_XQC7VD": {
+    "category": "angularjs",
+    "description": "AngularJS is one of the most exciting and innovative new technologies emerging in the world of web development. Designed to simplify the development and testing of web applications, it also provides structure for the entire development process.\n\nWebsites are no longer simple static content instead, websites have become much more dynamic, with a single page often serving as the entire site or application. And AngularJS allows web developers to build the necessary programming logic for such applications directly into a web page, binding the data model for the client web application to backend services and databases. AngularJS also allows the extension of HTML so that the UI design logic can be expressed easily in an HTML template file.\n\nLearning AngularJS shows you how to create powerful, interactive web applications that have a well-structured, reusable code base that will be easy to maintain. You ll also learn how to leverage AngularJS s innovative MVC approach to implement well-designed and well-structured web pages and web applications.",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51LtNEY43JL._SX379_BO1,204,203,200_.jpg",
+    "id": 18,
+    "title": "Learning AngularJS"
+  },
+  "-KuO3eu7k1ol8GKgXebV": {
+    "category": "javascript",
+    "description": "Most programming languages contain good and bad parts, but JavaScript has more than its share of the bad, having been developed and released in a hurry before it could be refined. This authoritative book scrapes away these bad features to reveal a subset of JavaScript that's more reliable, readable, and maintainable than the language as a whole―a subset you can use to create truly extensible and efficient code.\n\nConsidered the JavaScript expert by many people in the development community, author Douglas Crockford identifies the abundance of good ideas that make JavaScript an outstanding object-oriented programming language-ideas such as functions, loose typing, dynamic objects, and an expressive object literal notation. Unfortunately, these good ideas are mixed in with bad and downright awful ideas, like a programming model based on global variables.\n\nWhen Java applets failed, JavaScript became the language of the Web by default, making its popularity almost completely independent of its qualities as a programming language. In JavaScript: The Good Parts, Crockford finally digs through the steaming pile of good intentions and blunders to give you a detailed look at all the genuinely elegant parts of JavaScript, including:\n* Syntax\n* Objects\n* Functio\n* Inheritance\n* Arrays",
+    "imageUrl": "http://lh4.ggpht.com/_0j4bzarlOBg/TDQpgO3Xg4I/AAAAAAAABL8/90En1S_KAOk/image3%5B1%5D.png?imgmax=800",
+    "id": 19,
+    "title": "JavaScript The Good Parts"
+  },
+  "-KuO3txUQfO-Kl7bRYGE": {
+    "category": "javascript",
+    "description": "What you need to know about this book \n\nThis book is about ECMAScript 6 (whose official name is ECMAScript 2015), a new version of JavaScript.\n\nAudience: JavaScript programmers \n\nIn order to understand this book, you should already know JavaScript. If you don’t: my other book “Speaking JavaScript” is free online and teaches programmers all of JavaScript (up to and including ECMAScript 5).\n\nWhy should I read this book? \n\nYou decide how deep to go: This book covers ECMAScript 6 in depth, but is structured so that you can also quickly get an overview if you want to.\nNot just “what”, also “why”: This book not only tells you how ES6 works, it also tells you why it works the way it does.\nThoroughly researched: In order to make sense of ES6, I have consulted many sources:\nThe language specification (to which you’ll occasionally find pointers in this book)\nThe es-discuss mailing list\nThe TC39 meeting notes\nScientific papers\nDocumentation on features in other languages that inspired ES6 features\nAnd more ...",
+    "imageUrl": "http://exploringjs.com/es6/images/cover.jpg",
+    "id": 20,
+    "title": "Exploring ES6"
+  },
+  "-KuO5csJYbAVxXDopldF": {
+    "category": "javascript",
+    "description": "I'm sure you noticed, but \"JS\" in the book series title is not an abbreviation for words used to curse about JavaScript, though cursing at the language's quirks is something we can probably all identify with!\n\nFrom the earliest days of the web, JavaScript has been a foundational technology that drives interactive experience around the content we consume. While flickering mouse trails and annoying pop-up prompts may be where JavaScript started, nearly 2 decades later, the technology and capability of JavaScript has grown many orders of magnitude, and few doubt its importance at the heart of the world's most widely available software platform: the web.\n\nBut as a language, it has perpetually been a target for a great deal of criticism, owing partly to its heritage but even more to its design philosophy. Even the name evokes, as Brendan Eich once put it, \"dumb kid brother\" status next to its more mature older brother \"Java\". But the name is merely an accident of politics and marketing. The two languages are vastly different in many important ways. \"JavaScript\" is as related to \"Java\" as \"Carnival\" is to \"Car\".\n\nBecause JavaScript borrows concepts and syntax idioms from several languages, including proud C-style procedural roots as well as subtle, less obvious Scheme/Lisp-style functional roots.",
+    "imageUrl": "https://covers.oreillystatic.com/images/0636920039303/lrg.jpg",
+    "id": 21,
+    "title": "You Don't Know JS"
+  },
+  "-KuO71tHTE4OD2yoA0Ub": {
+    "category": "html5",
+    "description": "If you don't know about the new features available in HTML5, now's the time to find out. This book provides practical information about how and why the latest version of this markup language will significantly change the way you develop for the Web.\nHTML5 is still evolving, yet browsers such as Safari, Mozilla, Opera, and Chrome already support many of its features -- and mobile browsers are even farther ahead. HTML5: Up & Running carefully guides you though the important changes in this version with lots of hands-on examples, including markup, graphics, and screenshots. You'll learn how to use HTML5 markup to add video, offline capabilities, and more -- and you’ll be able to put that functionality to work right away.\nLearn new semantic elements, such as <header>, <footer>, and <section>\nMeet Canvas, a 2D drawing surface you can program with JavaScript\nEmbed video in your web pages without third-party plugins\nUse Geolocation to let web application visitors share their physical location\nTake advantage of local storage capacity that goes way beyond cookies\nBuild offline web applications that work after network access is disconnected.",
+    "imageUrl": "http://oleblogs.com/wp-content/uploads/2013/08/html5-wordpress.png",
+    "id": 22,
+    "title": "HTML5"
+  },
+  "-KuO7EyWkX9PbElxIiVK": {
+    "category": "html5",
+    "description": "HTML5 and CSS3 for the Real World is your perfect introduction to the latest generation of web technologies. This easy-to-follow guide covers everything you need to know to get started today. You'll master the semantic markup available in HTML5, as well as how to use CSS3 to create amazing-looking websites without resorting to complex workarounds.\n\nYou'll learn how to:\n\nLose that pesky Flash habit by embracing native HTML5 video\nSet type that truly supports your message\nBuild intelligent web forms that users will love!\nDesign modern web apps the shine on mobile devices\nCreate dynamic, efficient graphics on the fly with SVG and canvas\nUse shiny new APIs to add geolocation and offline functionality\nBuild your own full featured HTML5 website, the HTML5 Herald\nThis easy-to-follow guide is illustrated with lots of examples, and leads readers through the process of creating great websites from start to finish using HTML5 and CSS3.",
+    "imageUrl": "https://d2sis3lil8ndrq.cloudfront.net/books/691e7864-ad4f-4ff9-aaba-8e17710de238.png",
+    "id": 23,
+    "title": "HTML5 & CSS3"
+  },
+  "-KuO7XlrxT-MYlSmW7Us": {
+    "category": "html5",
+    "description": "From advanced selectors to generated content, and from gradients, shadows, and rounded corners to full-blown animations, CSS3 is a universe of creative possibilities. No one can better guide you through these galaxies than world-renowned designer, author, and CSS superstar Dan Cederholm. Learn what works, how it works, and how to work around browsers where it doesn't work.",
+    "imageUrl": "http://www.joomlavision.com/wp-content/uploads/2012-11-19/a2b8c_3-css3-for-web-designers-250px.jpg",
+    "id": 24,
+    "title": "CSS3"
+  },
+  "-KuO7nBXy1N3Re01BUL5": {
+    "category": "angular4",
+    "imageUrl": "https://www.packtpub.com/sites/default/files/bookretailers/9781784392321.jpg",
+    "id": 25,
+    "title": "Learning Firebase"
+  },
+  "-KuO8-UXRgS9SP1RQMJR": {
+    "category": "angular2",
+    "imageUrl": "https://images.springer.com/sgw/books/medium/9781484227367.jpg",
+    "id": 26,
+    "title": "Building Mobile Apps with Ionic 2 & Firebase"
+  },
+  "-KuO8DQvrYISk7PWMCXW": {
+    "category": "angularjs",
+    "imageUrl": "https://hellboundbloggers.com/wp-content/uploads/2010/11/Android-development-books.jpg",
+    "id": 27,
+    "title": "Android"
+  },
+  "-KuO8nMUxJVhCBx0z9ab": {
+    "category": "angular4",
+    "imageUrl": "http://freecomputerbooks.com/covers/Android-Cookbook.jpg",
+    "id": 28,
+    "title": "Android Cookbook"
+  },
+  "-KuP_9CJXxsuI0_3nAdn": {
+    "category": "angular4",
+    "imageUrl": "https://books.ninja-squad.com/public/images/ng2/ebook-cover.png",
+    "id": 29,
+    "title": "Angular 4 Ninja"
+  },
+  "-KuP_YcDI9xxZ7FNt1nQ": {
+    "category": "angular2",
+    "description": "Through this book, you will learn how to use Angular 2 and its component-based architecture in order to develop modern user interfaces. A new holistic way of thinking about UI development will be established throughout this book, and you will discover the power of Angular 2 components through many examples. This book is based on Release Candidate 1(RC1) of Angular 2.\n\nOn this journey, you'll discover the benefits of component-based user interfaces over the classical MVC design. Also, you will get a chance to compare a classical MVC with a component-based approach and understand the challenges of modern user interfaces. You will learn the very basics of the required core technologies and the setup needed to get going with Angular 2, and progressively enhance your understanding of Angular 2 components by working on the example application.\n\nAfter reading the book and following the example application, you will have built a small-to-mid-sized application with Angular 2 using a component-based UI architecture.",
+    "imageUrl": "https://www.packtpub.com/sites/default/files/9781785884641.png",
+    "id": 30,
+    "title": "Mastering Angular 2 Components"
+  },
+  "-KuPa0U0uYu92dm7Dl8f": {
+    "category": "angularjs",
+    "description": "Book Description\n\nAngularJS is an open-source JavaScript framework. Its goal is to develop MVC-based web applications and reduce the amount of JavaScript needed to make web applications functional.\n\nThe book will take the reader through the workflow of building an AngularJS app.\n\nThroughout the process of app creation, we will have a look at the different interaction points between design and development and the readers will learn how AngularJS helps both roles to build an application that works well, as well as how to create clean and maintainable front end markup and code.\n\nTable of Contents\n\n1: ANGULAR ZEN\n2: BUILDING AND TESTING\n3: COMMUNICATING WITH A BACK-END SERVER\n4: DISPLAYING AND FORMATTING DATA\n5: CREATING ADVANCED FORMS\n6: ORGANIZING NAVIGATION\n7: SECURING YOUR APPLICATION\n8: BUILDING YOUR OWN DIRECTIVES\n9: BUILDING ADVANCED DIRECTIVES\n10: BUILDING ANGULARJS WEB APPLICATIONS FOR AN INTERNATIONAL AUDIENCE\n11: WRITING ROBUST ANGULARJS WEB APPLICATIONS\n12: PACKAGING AND DEPLOYING ANGULARJS WEB APPLICATIONS\nWhat You Will Learn\n\nUse AngularJS DOM-based templating effectively and learn how it differs from other frameworks\nQuery and modify data in various backends and become proficient ...",
+    "imageUrl": "https://www.packtpub.com/sites/default/files/1820OS.jpg",
+    "id": 31,
+    "title": "Mastering AngularJS"
+  },
+  "-KuPaTOr0g7cRKRIZVyv": {
+    "category": "angular4",
+    "imageUrl": "https://qph.ec.quoracdn.net/main-qimg-bb116deccbfba0fcbaf5de7f9f17d8db-c",
+    "id": 32,
+    "title": "Android Recipes"
+  },
+  "-KuPahwIlZnflCz9g8n1": {
+    "category": "html5",
+    "description": "HTML5 Unleashed is the authoritative guide that covers the key web components driving the future of the Web. Harness the power of HTML5 to create web apps and solutions that deliver state-of-the-art media content and interactivity with new Audio, Video, and Canvas elements.\n \nHTML5 technologies are essential knowledge for today's web developers and designers. New APIs such as Local Storage, Geolocation, Web Workers, and more expand the Web as a platform, allowing for desktop-like applications that work uniformly across platforms.\n \nComprehensive and up-to-date, HTML5 Unleashed is organized as an accessible guide of tutorials and practical references. Because HTML5 covers a far-reaching set of standards, each chapter in HTML5 Unleashed is written to stand on its own. Whether you choose to skip around or read it cover to cover, full-color syntax and figures in HTML5 Unleashed ensure that you do not need to be next to a computer to learn the most important concepts of the modern Web.",
+    "imageUrl": "http://www.informit.com/ShowCover.aspx?isbn=0672336278",
+    "id": 33,
+    "title": "HTML5 Unleashed"
+  },
+  "-KuPazreDfJV_5oZqVJh": {
+    "category": "javascript",
+    "description": "What's the best approach for developing an application with JavaScript? This book helps you answer that question with numerous JavaScript coding patterns and best practices. If you're an experienced developer looking to solve problems related to objects, functions, inheritance, and other language-specific categories, the abstractions and code templates in this guide are ideal—whether you're using JavaScript to write a client-side, server-side, or desktop application.\nWritten by JavaScript expert Stoyan Stefanov—Senior Yahoo! Technical and architect of YSlow 2.0, the web page performance optimization tool—JavaScript Patterns includes practical advice for implementing each pattern discussed, along with several hands-on examples. You'll also learn about anti-patterns: common programming approaches that cause more problems than they solve.\nExplore useful habits for writing high-quality JavaScript code, such as avoiding globals, using single var declarations, and more\nLearn why literal notation patterns are simpler alternatives to constructor functions\nDiscover different ways to define a function in JavaScript\nCreate objects that go beyond the basic patterns of using object literals and constructor functions\nLearn the options available for code reuse and inheritance in JavaScript.",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51%2BSiphz7AL._SX377_BO1,204,203,200_.jpg",
+    "id": 34,
+    "title": "JavaScript Patterns"
+  },
+  "-KuPbZv0RFU6edptf3gp": {
+    "category": "angular2",
+    "imageUrl": "https://www.packtpub.com/sites/default/files/3739OS_5467_Ionic%202%20Blueprints.jpg",
+    "id": 35,
+    "title": "Ionic 2 Blueprints"
+  },
+  "-KuPburV4wpQqUOlkPri": {
+    "category": "angular2",
+    "imageUrl": "https://covers.oreillystatic.com/images/0636920044710/lrg.jpg",
+    "id": 36,
+    "title": "Mobile App Ionic 2"
+  },
+  "-KuPcBZRn7crRFQBL3DO": {
+    "category": "angularjs",
+    "imageUrl": "https://www.packtpub.com/sites/default/files/bookretailers/V06514_MockupCover.jpg",
+    "id": 37,
+    "title": "Ionic 2 Solutions"
+  },
+  "-KuPk8zHtY_i2nGKhXmX": {
+    "category": "angularjs",
+    "description": "AngularJS is an extensive framework used to make full-blown websites with minimal code. Animations in AngularJS are achieved through CSS3 transitions, CSS animations, and JavaScript. AngularJS allows you to create animations with outstanding effects. There are a variety of effects that can be integrated with AngularJS and different ways to achieve the same result. Learning AngularJS Animation swill help you choose a way that best fits your needs. This guide is a complete step-by-step tutorial to improving UX by using animations in AngularJS projects. The first few chapters explain the basics of CSS3 transitions and animations and all the available features such as CSS3 keyframes to be used together with AngularJS, also covering how to move beyond JavaScript animations. The book then shows you how to choose an appropriate approach for creating web apps. It provides you with an understanding of how AngularJS native directives can be animated with CSS or JavaScript and how to animate custom directives using the $animate service.\nFinally, you will learn powerful optimization tricks to improve the speed and quality of your animations.",
+    "imageUrl": "https://www.packtpub.com/sites/default/files/4428OS_Learning%20Angular.js%20Animations_Mini_0.jpg",
+    "id": 38,
+    "title": "AngularJS Animations"
+  },
+  "-KuPlMRDNeEiPl10ezdR": {
+    "category": "angular4",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51UV-RJbg2L._SX348_BO1,204,203,200_.jpg",
+    "id": 39,
+    "title": "Google Cloud Platform"
+  },
+  "-KuPlcixH6WFk8jEIXTl": {
+    "category": "angular2",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/516iL3D16SL._SX397_BO1,204,203,200_.jpg",
+    "id": 40,
+    "title": "Google Cloud Platform In Action"
+  },
+  "-KuPlsTUvCRQXRSOXnsv": {
+    "category": "angularjs",
+    "imageUrl": "https://cloud.google.com/blog/big-data/2017/03/images/148848725692796/data-science-on-gcp.png",
+    "id": 41,
+    "title": "Google Cloud Platform Data Science"
+  },
+  "-KuPmbc33-K6HFl51lNY": {
+    "category": "angular4",
+    "imageUrl": "https://www.safaribooksonline.com/image/refworks/800x600/media/book/01/9781491996010/9781491996010-2017-08-31.jpg",
+    "id": 42,
+    "title": "Ionic 3 Framework"
+  },
+  "-KuPmv8x_aZeSL7zDFvq": {
+    "category": "angular2",
+    "imageUrl": "https://www.packtpub.com/sites/default/files/0570_B03485_Getting%20Started%20with%20Ionic_.jpg",
+    "id": 42,
+    "title": "Ionic Getting Started"
+  },
+  "-KuPobW14VtfCHYsM2I7": {
+    "category": "angular4",
+    "imageUrl": "http://4.bp.blogspot.com/-bz4ItA-M_lw/VjcvRr_goFI/AAAAAAAAB9E/gdRs3d35Rp8/s1600/Kubernetes_Up_and_Running_Preview.png",
+    "id": 43,
+    "title": "Kubernetes Up & Running"
+  },
+  "-KuPolF1Pm84sSAd9VYu": {
+    "category": "angular2",
+    "imageUrl": "https://www.packtpub.com/sites/default/files/9781786461001.png",
+    "id": 44,
+    "title": "Mastering Kubernetes"
+  },
+  "-KuPp-ST5zOie9Xyt6bw": {
+    "category": "angularjs",
+    "imageUrl": "https://www.packtpub.com/sites/default/files/9781787283367.png",
+    "id": 45,
+    "title": "Getting Started With Kubernetes"
+  },
+  "-KuXj6xIfnOR7UMWoXQ1": {
+    "category": "angularjs",
+    "description": "Ready to master AngularJS? What if you could master the entire framework – with solid foundations – in less time without beating your head against a wall? Imagine how quickly you could work if you knew the best practices and the best tools? Stop wasting your time searching and have everything you need to be productive in one, well-organized place, with complete examples to get your project up without needing to resort to endless hours of research.",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/712vyspLr8L.jpg",
+    "id": 46,
+    "title": "ng-book: The Complete Book On AngularJS"
+  },
+  "-KuXjRgC-jzU4FPl5WMB": {
+    "category": "angular2",
+    "description": "Design state-of-the-art applications with customized Angular services\n\nAbout This Book\nLeverage the latest Angular and ES2016 features to create services\nIntegrate third-party libraries effectively and extend your app s functionalities\nImplement a real-world case study from scratch and level up your Angular skills\nWho This Book Is For\nIf you are a JavaScript developer who is moving on to Angular and have some experience in developing applications, then this book is for you. You need not have any knowledge of on Angular or its services.\n\nWhat You Will Learn\nExplore various features and topics involved in modules, services, and dependency injection\nSketch and create wire-frames for your project\nUse controllers to collect data and populate them into NG UIs\nCreate a controller and the required directives to build a tree data structure\nImplement a logic to decide the relevancy of any given evidence\nCreate a partially-AI service\nBuild controllers to set the template for the report\nCollect, investigate, perform decision making, and generate reports in one the big automated process.",
+    "imageUrl": "https://www.packtpub.com/sites/default/files/B05074.png",
+    "id": 47,
+    "title": "Angular 2 Services"
+  },
+  "-KuXjns-z5PLA87fg6CD": {
+    "category": "angular4",
+    "imageUrl": "https://www.packtpub.com/sites/default/files/9781784399092.png",
+    "id": 48,
+    "title": "Restful Java Web Services"
+  },
+  "-KuXm9khPlMvsoNi60fY": {
+    "category": "angular4",
+    "description": "ng new\n\nThe Angular CLI makes it easy to create an application that already works, right out of the box. It already follows our best practices!\n\nng generate\n\nGenerate components, routes, services and pipes with a simple command. The CLI will also create simple test shells for all of these.\n\nng serve\n\nEasily test your app locally while developing.\n\nTest, Lint, Format\n\nMake your code really shine. Run your unittests or your end-to-end tests with the breeze of a command. Execute the official Angular linter and run clang format.",
+    "imageUrl": "https://cdn-images-1.medium.com/max/1600/1*J2uKjrgfAhyFvzEv2x2EBQ.png",
+    "id": 49,
+    "title": "Angular CLI"
+  },
+  "-KujLpstgUaWSBNQKWK_": {
+    "category": "angular4",
+    "description": "Essential Angular is a concise, complete overview of the key aspects of Angular, written by two Angular core contributors. The book covers the framework’s mental model, its API, and the design principles behind it. This book is fully up to date with the latest release of Angular.\n\nEssential Angular gives you a strong foundation in the core Angular technology. It will help you put all the concepts into the right places so you will have a good understanding of why the framework is the way it is. Read this book after you have toyed around with the framework, but before you embark on writing your first serious Angular application.\n\nThis book covers concepts such as the differences between Just-In-Time (JIT) and Ahead-Of-Time (AOT) compilation in Angular, alongside NgModules, components and directives. It also goes into detail on Dependency Injection and Change Detection: essential skills for Angular developers to master. The book finishes with a look at testing, and how to integrate different testing methodologies in your Angular code.",
+    "imageUrl": "https://dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/featured_book_block/B07216.png",
+    "id": 50,
+    "title": "Essential Angular"
+  },
+  "-KyvtUK7iQttpQqTzeQu": {
+    "category": "angular4",
+    "description": "Der \"BookMonkey\" ist das Demo-Projekt zum Buch \"Angular: Grundlagen, fortgeschrittene Techniken und Best Practices mit TypeScript - ab Angular 4, inklusive NativeScript und Redux\". Mithilfe dieses Buchs werden Sie Googles neuestes Framework kennenlernen. Wir laden Sie dazu ein, mit den aktuellsten Technologien moderne Single-Page-Anwendungen zu erstellen.\n\nAnhand des Beispielprojekts BookMonkey führen wir Sie schrittweise an die Entwicklung von Angular-Anwendungen heran. Sie werden in die grundlegenden Konzepte eingeführt, die es Ihnen ermöglichen, strukturierte, modularisierte und somit wartbare Applikationen zu erstellen.\n\nDieses Repository fasst alle Schritte zur Entwicklung des BookMonkeys zusammen und stellt sie in einer gemeinsamen Anwendung dar. Die einzelnen Schritte sind außerdem jeweils als einzelne Repositorys verfügbar und sollten für die schrittweise Entwicklung genutzt werden.",
+    "imageUrl": "https://camo.githubusercontent.com/c15aafdaedd6ab9224e3664136f61551803b6675/68747470733a2f2f616e67756c61722d627563682e636f6d2f616e67756c61722d627563685f736d616c6c2e706e67",
+    "id": 51,
+    "title": "Angular 4"
+  }
+}

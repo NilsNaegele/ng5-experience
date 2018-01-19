@@ -11,8 +11,12 @@
         </a>
         <a routerLink="/blogs" class="btn-item btn-item--purple"
           (click)="sidenav.close()" for="menu__open">
-          Blogs
+          Blog
         </a>
+        <a routerLink="/books" class="btn-item btn-item--yellow"
+        (click)="sidenav.close()" for="menu__open">
+          Bücher
+      </a>
       </mat-sidenav>
       <div>
         <app-menu class="app-menu" (click)="toggle()"></app-menu>
