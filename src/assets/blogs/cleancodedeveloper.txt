@@ -1,0 +1,146 @@
+Software Handwerks Manifest:
+Als aspirierende Software-Handwerker, heben wir die Messlatte für professionnelle
+Softwareentwicklung an, indem wir ständig üben und anderen dabei helfen, das Handwerk zu
+erlernen. Durch diese Tätigkeit haben wir diese Werte zu schätzen gelernt:
+1. Gut gefertigte Software.
+2. Stets Mehrwert zu schaffen.
+3. Eine Gemeinschaft von Experten.
+4. Produktive Partnerschaften.
+
+Agile Manifest:
+Wir erschliessen bessere Wege, Software zu entwickeln. indem wir es selbst tun und anderen
+dabei helfen. Durch diese Tätigkeit haben wir diese Werte zu schätzen gelernt:
+1. Individuen und Interaktionen mehr als Prozesse und Werkzeuge.
+2. Funktionierende Software mehr als umfassende Dokumentation.
+3. Zusammenarbeit mit dem Kunden mehr als Vertragsverhandlung.
+4. Reagieren auf Veränderung mehr als Befolgen eines Plans.
+
+Clean Code Developer:
+1. Schätze Variation
+Werte: Evolvierbarkeit, Kontinuierliche Verbesserung.
+2. Tue nur das Nötigste
+Werte: Produktionseffizienz, Evolvierbarkeit.
+Vorsicht vor Optimierungen.
+You ain't gonna need it!
+Keep it simple, stupid.
+3. Isoliere Aspekte
+Werte: Evolvierbarkeit
+Dont't repeat yourself.
+Separation of concerns.
+Single Level of Abstraction.
+Single Responsibility Principle.
+Interface Segregation Principle.
+Entwurf und Implementation überlappen nicht Prinzip.
+Integration Operation Segregation Principle.
+4. Minimiere Abhängigkeiten
+Werte: Evolvierbarkeit.
+Dependency Inversion Principle.
+Information Hiding Principle.
+Law of Demeter.
+Open Closed Principle.
+Tell, don't ask.
+Interface Segregation Principle.
+Integration Operation Segregation Principle.
+5. Halte Versprechen ein
+Werte: Evolvierbarkeit, Minimize Surprises
+Liskov Substitution Principle.
+Principle of Least Astonishment.
+Implementation spiegelt Entwurf.
+Favour Composition over Inheritance.
+
+Praktisches:
+1. Umarme Unsicherheit:
+Werte: Evolvierbarkeit, Kontinuierliche Verbesserung
+Ein Versionskontrollsystem einsetzen.
+Automatisierte Integrationstests.
+Automatisierte Unit Tests.
+Mockups (Testattrapen).
+Continuous Integration.
+Inversion of Control Container.
+2. Fokussiere
+Werte: Produktionseffizienz
+Komponentenorientierung.
+Test Getriebene Entwicklung.
+Test First.
+Limit Work In Progress
+3. Wertschätze Qualität
+Werte: Produktionseffizienz
+Akzeptiere nur höchste Qualität.
+Automatisiere Unit Tests.
+Reviews.
+4. Mach fertig
+Werte: Produktionseffizienz
+Iterative Entwicklung.
+Continuous Delivery.
+Limit WIP.
+5. Halte Ordnung
+Werte: Evolvierbarkeit, Korrektheit, Produktionseffizienz
+Die Pfadfinderregel beachten.
+Komplexe Refaktorisierung
+Einfache Refaktorisierungmuster anwenden.
+Statische Codeanalayse (Metriken)
+Code Coverage Analyse
+Source Code Konventionen
+6. Bleib am Ball
+Werte: Kontinuierliche Verbesserung
+LESEN, LESEN, LESEN.
+CODEN, CODEN, CODEN bis der Arzt kommt.
+Teilnahme an Fachveranstaltungen.
+Erfahrung weitergeben.
+Täglich reflektieren.
+Root Cause Analyse.
+Messen von Fehlern.
+Issue Tracking.
+Regelmäßige Retrospectiven.
+
+Agile Prinzipien:
+1. Zufriedenstellung des Kunden durch frühe und kontinuierliche Auslieferung
+von wertvoller Software.
+2. Veränderungen Nutzenzum Wettbewerbsvorteil des Kunden.
+3. Lieferung von funktionierender Software in regelmäßigen, bevorzugten
+kurzen Zeitspannen (wenige Wochen).
+4. Nahezu tägliche Zusammenarbeit von Fachexperten und Entwicklern während des Projektes.
+5. Bereitstellung des Umfeldes und der Unterstützung, welche von
+motivierten Individuen für die Aufgabenerfüllung benötigt wird.
+6. Informationsübertragung nach Möglichkeit im Gespräch von Angesicht zu Angesicht.
+7. Als wichtigstes Fortschrittsmaß gilt die Funktionsfähigkeit der Software.
+8. Einhalten eines gleichmäßigen Arbeitstempos von Auftraggebern, Entwicklern und Benutzern
+für eine nachhaltige Entwicklung.
+9. STÄNDIGES AUGENMERK AUF TECHNISCHE EXZELLENZ UND GUTES DESIGN.
+10. Einfachheit ist essenziell.
+11. Selbstorganisation des Teams bei Planung und Umsetzung.
+12. Selbstreflexion des Teams über das eigene Verhaltenzur Anpassung im Hinblick
+auf Effizienzsteigerung.
+
+Agile Methoden:
+1. Paarprogrammierung.
+2. TESTGETRIEBENE ENTWICkLUNG.
+3. Ständige Refaktorierung.
+4. Daily Stand-Ups.
+5. Story Cards.
+6. Schnell Code Reviews.
+
+Software Craftsmanship:
+1. Clean Code.
+2. Übung. Übung. Übung.
+3. Lebenslanges Lernen.
+4. Gemeinschaft.
+
+
+1. Programmiere die ganze Zeit mit Leidenschaft.
+2. Baue neue Web Applikationen. Lerne JavaScript.
+3. Schreibe neue Blog Posts, Tutorials, How-To Videos für YouTube.
+4. Lege ein Repository auf GitHub an. Ermutige Deine Organisation es auch zu tun.
+Open Source ist die Zukunft.
+5. Checke viel Code ein. Lese viel Code auf GitHub. Optimiere den Code.
+6. Lese die Dokumentationen.
+7. Trage zu Open Source Repositories auf GitHub bei.
+8. Habe Freude und sei Stolz auf Dich. Achte auf die Qualität Deines Codes.
+9. Lerne neue Techniken/Frameworks/Sprachen kontinuierlich.
+10. Wer immer strebend sich bemüht den können wir erlösen.
+11. Code die ganze Zeit mit Leidenschaft und Motivation.
+12. Sei experimentier Freudig. Lerne 10 Wege ein Problem zu lösen.
+12. ARBEITE HART | SEI NETT | TUHE MEHR.
+13. Sei unberechenbar, tuhe niemals 2 Mal das gleiche.
+14. Schreibe ein GitBook.
+
