@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-me.component.scss', './about-me-mobile.component.scss']
 })
 export class AboutMeComponent implements OnInit {
-  fullImagePath: string;
   gitHubImagePath: string;
   ngImagePath: string;
   javaScriptImagePath: string;
@@ -18,10 +17,8 @@ export class AboutMeComponent implements OnInit {
   firebaseImagePath: string;
   googleCloudPlatformImagePath: string;
   linuxImagePath: string;
-  BKAImagePath: string; // true heroes
 
   constructor() {
-    this.fullImagePath = '../../assets/images/angular-material.png';
     this.gitHubImagePath = '../../assets/images/github.png';
     this.ngImagePath = '../../assets/images/angular.png';
     this.javaScriptImagePath = '../../assets/images/javascript.png';
@@ -33,7 +30,6 @@ export class AboutMeComponent implements OnInit {
     this.firebaseImagePath = '../../assets/images/firebase.png';
     this.googleCloudPlatformImagePath = '../../assets/images/googleCloudPlatform.png';
     this.linuxImagePath = '../../assets/images/linux.png';
-    this.BKAImagePath = '../../assets/images/bka.png';
 
   }
 
