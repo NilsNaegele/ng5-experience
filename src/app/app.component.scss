@@ -82,6 +82,7 @@
 
     &:hover {
       background-color: $orange;
+      color: $white;
     }
   }
 
@@ -92,26 +93,29 @@
 
     &:hover {
       background-color: $lightgreen;
+      color: $white;
     }
   }
 
   &--purple {
     height: 34px;
-    width: 117px;
+    width: 97px;
     left: 30px;
 
     &:hover {
       background-color: $purple;
+      color: $white;
     }
   }
 
   &--yellow {
     height: 34px;
-    width: 177px;
+    width: 145px;
     left: 30px;
 
     &:hover {
       background-color: $lightyellow;
+      color: $white;
     }
   }
 }

@@ -8,9 +8,9 @@
             class="book-overview__header-searchbar" placeholder="Suchen ...">
   </div>
   <div class="book-overview__list">
-    <!-- <div routerLink="/book/{{book.id}}" -->
-      <div *ngFor="let book of books | async | searchBy:term"
-          class="book-overview__list-item">
+    <div routerLink="/book/{{book.id}}"
+        *ngFor="let book of books | async | searchBy:term"
+         class="book-overview__list-item">
       <div class="book-overview__list-item-title">
           {{ book.title }}
       </div>

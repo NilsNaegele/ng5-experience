@@ -1,5 +1,7 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
+import { registerLocaleData } from '@angular/common';
+import localeDe from '@angular/common/locales/de';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -49,6 +51,8 @@ import { AuthGuardService } from './shared/services/auth-guard.service';
 import { BlogService } from './shared/services/blog.service';
 import { BookService } from './shared/services/book.service';
 
+registerLocaleData(localeDe, 'de');
+
 
 @NgModule({
   declarations: [
@@ -83,8 +87,12 @@ import { BookService } from './shared/services/book.service';
     AuthenticationModule,
     AppRoutingModule
   ],
-  providers: [AuthenticationService, AuthGuardService,
-              BlogService, BookService, {provide: MAT_DATE_LOCALE, useValue: 'de-DE'}],
-  bootstrap: [AppComponent]
+  providers: [
+              AuthenticationService, AuthGuardService,
+              BlogService, BookService,
+              { provide: MAT_DATE_LOCALE, useValue: 'de-DE' },
+              { provide: LOCALE_ID, useValue: 'de'}
+            ],
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }

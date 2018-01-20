@@ -10,7 +10,7 @@ import { Observable } from 'rxjs/Observable';
   styleUrls: ['./blog.component.scss', './blog-mobile.component.scss']
 })
 export class BlogComponent implements OnInit {
-  blogs: any[];
+  blogs: any[] = [];
 
   constructor(private route: ActivatedRoute,
               private router: Router,

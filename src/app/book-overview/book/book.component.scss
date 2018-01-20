@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: center;
     padding: 50px 50px 0 0;
-    background: $darkgrey;
+    background: $lightpink;
     color: $white;
     position: relative;
     height: calc(100vh - 193px);
@@ -26,7 +26,7 @@
                 padding: 0 50px;
             }
 
-            &__client {
+            &__category {
                 font-size: 14px;
                 font-weight: 700;
                 text-transform: uppercase;
@@ -56,8 +56,8 @@
             }
 
             &__paragraph {
-                font-size: 16px;
-                font-weight: 400;
+                font-size: 20px;
+                font-weight: 700;
                 width: 90%;
                 padding: 0 50px;
                 margin: 10px 0;
@@ -67,7 +67,6 @@
 
             &__link {
                 font-size: 33px;
-                width: 50px;
                 padding: 0 50px;
 
                 & a {
@@ -76,7 +75,7 @@
                     width: 45px;
                     text-align: center;
                     align-self: center;
-                    background-color: $darkgrey;
+                    background-color: $lightpink;
                     color: $white;
                     margin: 5px;
                     text-decoration: none;
@@ -84,7 +83,7 @@
 
                     &:hover {
                         background-color: $white;
-                        color: $darkgrey;
+                        color: $lightred;
                     }
 
                     &::before {
@@ -94,10 +93,10 @@
             }
         }
 
-        .skill {
+        .technologies {
             clip-path: polygon(
-            0 50%, /* left top */
-            100% 0, /* right top */
+            100% 0, /* left top */
+            100% 80%, /* right top */
             100% 100%, /* right bottom */
             0 100% /* left bottom */
             );
@@ -107,7 +106,7 @@
             height: 250px;
             width: -webkit-stretch;
             width: 100%;
-            background: $lightred;
+            background: $blue;
             position: absolute;
             bottom: 0px;
 
@@ -122,7 +121,7 @@
 
                 &-items {
                     font-style: italic;
-                    margin: 0;
+                    margin-left: 100%;
                     width: 100%;
                     word-wrap: break-word;
                 }
@@ -149,8 +148,8 @@
             }
 
             &--wide {
-                height: calc(50vh - 53px);
-                width: 600px;
+                height: calc(50vh - 169px);
+                width: 324px;
 
                 & img {
                     width: 100%;
