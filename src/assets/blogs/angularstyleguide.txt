@@ -1,0 +1,84 @@
+1. Definiere eine Sache, einen Dienst oder Komponent per Datei.
+Nicht mehr als 400 Zeilen Code.
+2. Schreibe kleine Funktionen. Nicht mehr als 75 Zeilen Code.
+3. Benennen die Klassen, Eigenschaften, Variabeln, Methoden
+so dass keine kognitive Dissonanz für den Leser entsteht.
+Dass könntest Du in 3 Wochen sein.
+Die Benennenung sollte präzise ausdrücken was dieses Element macht.
+Nutze eine konsistente Bennenung der Symbole. Alle im Team sollten dieses tun,
+damit der Code aussieht wie aus einem Guß. Folge ein Schema welches das Symbol Merkmal
+dann den Typ beschreibt: feature.type.ts .
+4. Trenne Datei namen mit Punkten und Bindestrichen. Nutze die Konventionen wie: .service,
+.component, .pipe, .module, .directive .
+5. Benenne die Artefakte wofür die stehen. Nutze Pascal Case für Klassen Namen.
+Paare Name des Symbols mit mit dem Namen der Datei.
+Füge den Namen des Symbols als Suffix hinzu: wie Component, Directive, Module, Pipe oder Service.
+Geben den Dateinamen als Suffix hinzu: .component.ts, .directive.tx, .module.ts, .pipe.ts oder
+.service.ts .
+6. Benenne die Dienste einheitlich bennant nach Ihrem Feature. DatenService, AuthentifizierungsService.
+7. Boostrapping. Tuhe alle StartUp Logik und Platform Logik in die main.ts Datei.
+Füge Fehlerbehandlung in die Bootstrap Logik ein.
+8. Direktiven Selektoren. Benutze Lower Case Camel Case für die Benennung der Selektoren der Direktiven.
+9. Benutze mit Bindestrichen versehen, Lower Case Elemente Selektoren Werte, wie app-helden-technologien.
+Benutze ein Prefix der deine Organisation, Applikation oder Feature Area identifiziert.
+10. Benutze eine maßgeschneiderte Prefix für die Selektoren Deiner Direktiven. Zum Beispiel: sap für SAP.
+11. Benutze einen einheitlichen Namen für alle Deine Pipes. Zum Beispiel: searchByTerm, formatData.
+12. Benenne Test Spezifikations Dateien wie die Komponente die sie testen. Benutze als Suffix .spec.
+13. Benenne E2E Test Dateien nach dem Feature welches sie testen mit einem Suffix .e2e-spec .
+14. Module. Hänge den Symbolnamen mit dem Suffix Module. Geben dem Dateinamen die Erweiterung .module.ts .
+Benenne das Modul nach dem Feature und Verzeichniss in dem es lebt.
+15. Habe einen einheitlichen Satz von Coding, Namen und Whitespace Konventionen. Der Linter kann das machen. Muß konfiguriert werden.
+16. Klassen. Nutze Pascal Case zur Benennung von Klassen Namen.
+17. Deklariere Variabeln mit const wenn Ihr Wert sich während des Lebens der Applikation nicht ändern wird.
+18. Interfaces. Nutze Pascal Case zur Benennung von Schnittstellen Namen. Nutze eine Klasse anstatt eines Interfaces
+für Dienste. Komponente, Direktiven und Pipes. Nutze ein Interface für Daten Modelle.
+19. Eigenschaften und Methoden. Nutze Lower Case Camel Case zur Bennenung von Eigenschaften und Methoden.
+Underscore als Prefix von privaten Methoden oder Eigenschaften sollte nicht verwendet werden.
+20. Import Zeilen Spacing. Lasse eine Zeile frei zwischen Applikations Importen und Third Party Imports.
+Destrukturierte Importierte Symbole wenn möglich Alphabetisch sortieren.
+21. Strukturiere die Applikation so dass Du schnell Deinen Code finden kannst,
+der Code verstehbar ist auf einem Blick, eine flache Struktur, und sich nicht wiederholen.
+22. Den Code zu finden sollte intuitiv, einfach und schnell sein.
+23. Benenne die Dateien das Du sofort weist was die Datei beinhaltet und wofür die steht.
+24. Sei Deskriptiv mit Dateinamen und der Inhalt sollte genau eine Komponente beinhalten.
+25. Eine flache Verzeichnissstruktur so lange wie möglich beibehalten. Erstelle ein Unterverzeichniss wenn mehr als 7 Dateien drin sind.
+Konfiguriere deine IDE Dateien zu verstecken die ablenken wie zum Beispiel der transpilierte JavaScript Code und .map Dateien.
+26. DRY. Code nicht wiederholen. Die Lesbarkeit des Codes sollte aber nicht dadrunter leiden.
+27. Habe eine kurzfristige und langfristige Vision wohin die Reise mit Deiner Applikation geht. State Management. CSS Frameworks. Upgrade auf die neuesten Versionen.
+28. Erstelle Verzeichnisse benannt nach dem Feature welches sie repräsentieren.
+29. App Root Module. Erstelle ein NgModule in der Wurzel der Applikation. Die sollte so benannt werden: app.module.ts .
+30. Erstelle ein NgModule für alle Feature Areas in der Applikation. Benennung, Platzierung sollte koherent sein.
+Google hat im Durchschnitte 1.5 Komponente pro Modul. Wiederverwendbarkeit des Codes.
+31. Shared Feature Module erstellen mit Komponenten, Direktiven und Pipes die referenziert und genutzt werden in anderen Feature Modules der Applikation.
+32. Ein Core Module erstellen mit allen Komponenten die wesentlich zur Applikationslogik beitragen.
+33. Nur das Root AppModule sollte den CoreModule importieren. Nutze Guard Logik um ein mehrfaches importieren des Core Moduls zu vermeiden.
+34. Benutze Bindestrich Case für die Benennung der Element Selektoren der Komponenten.
+35. Gebe den Komponenten einen Element Selektor anstatt eines Attribut- oder Klassen-Selektors.
+36. Das HTML Template und CSS Stil sollte in seiner eigenen Datei leben.
+37. Nutze die @input() und @output() Klassen Dekoratoren anstatt die inputs und outputs
+Eigenschaften von der @Directive und @Component Metadaten.
+38. Vermeide Aliases von input und output außer es gibt einen ganz besonderen Grund.
+39. Eigenschaften vor Methoden oben in der Komponenten Klasse platzieren.
+40. Limitiere Logik in der Komponente auf dass was sie braucht um die Daten im HTML darzustellen.
+Delegiere Logik zu diensten. Wiederverwendbare Logik sollte in einen Dienst implementiert werden.
+Komponente sollten einfach und fokussiert sein.
+41. Benenne Ereigniss Methoden mit dem Prefix on gefolgt vom Namen des Ereignisses.
+42. Die Präsentationslogik sollte sich in der Komponenten Klasse befinden und nicht in der HTML Vorlage.
+43. Benutze Direktiven um ein Element intelligenz zu geben. Nutze Attribut Direktiven für Präsentationslogik ohne eine Vorlage.
+44. Bevorzuge den @HostListener und @HostBinding zur Host Eigenschaft der @Directive und @Component Dekoratoren.
+Sei konsistent in Deiner Auswahl.
+45. Dienste sind Singletons. Nutze Dienste als Singletons mit dem gleichen Injektor. Nutze die um Daten und Funktionalität zu teilen.
+46. Erstelle Services mit einem Single Responsibility welches in seinem Kontext enkapsuliert ist.
+Erstelle einen neues Dienst wenn der Dienst mehrfach Verantwortung anfängt zu übernehmen.
+47. Liefer Dienste zum Angular Injektor bei der höchsten Komponente wo sie geteil werden.
+48. Nutze den @Injectable() Klassen Dekorator anstatt den @Injekt Parameter Dekorator wenn Typen als Tokens
+für die Abhängigkeiten des Dienstes verwendet werden.
+49. Spreche mit dem Server durch einen Dienst. Refaktoriere Logik die Operationen mit Daten macht und Interaktionen in einen Service.
+50. Mache Dienste verantwortlich für HTTP Requests, XHR, Local Storage, In Memory Speichern und andere Daten Operationen.
+51. Nutze die Lebenszyklus Hooks von Angular um an präzisen Momenten in wichtige Ereignisse Deiner Applikation einzuwirken.
+52. Implementiere die Lebenszyklus Interfaces. Linte Deinen Code.
+53. Nutze Codelyzer um diesen Regeln zu folgen.
+54. Nutze die Snippets für Dein IDE. Ich empfehle am Anfang alles per Hand zu schreiben bis dass alles im Kopf festsitzt. Üben. Üben. Üben.
+55. Es gibt auch die JavaScript Coding Guidelines von Google und Airbnb die es lohnen soll sich mal anzuschauen.
+56. Der Google Closure Compiler kann Dein JavaScript hoch optimieren.
+57. ABC von Alex Eagle sich mal anschauen. Angular Bazel Closure. Das ist die interne Build Tool Chain von Google. Soll sehr schnell sein.
