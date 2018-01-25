@@ -1,0 +1,206 @@
+datum: 26.1.2018
+titel: Angular Schnell Referenz
+
+erster paragraph:
+Bootstrapping:
+platformBrowserDynamic().bootstrapModule(AppModule). Die App starten,
+die Wurzel Komponente des spezifizierenden NgModule nutzend.
+
+NgModules:
+@NgModule({ declarations: ..., imports: ..., exports: ..., providers: ..., bootstrap: ...})
+class MyModule. Definiert ein Module welches Komponente, Direktiven, Pipes und Providers enthält.
+declarations: [ MyRedComponent, MyBlueComponent, MyDatePipe ]. Liste von Komponenten, Direktiven,
+und Pipes die diesem Modul angehören.
+imports: [ BrowserModule, SomeOtherModule ]. Liste von Modulen in dieses Modul zu importieren.
+Alles von den importierten Modules ist verfügbar in den Deklarationen dieses Moduls.
+exports: [ MyRedComponent, MyDatePipe ]. Liste von Komponenten, Direktiven und Pipes,
+die sichtbar sind in Modulen die dieses Modul importieren.
+providers: [ MyService, { provide: ... }]. Liste von Dependency Injection Providers sichtbar
+im Inhalt dieses Modules und Importierern von diesem Modul.
+bootstrap: [ MyAppComponent ]. Liste von Komponenten zu bootstrappen wenn dieses Modul gestartet wird.
+
+Template Syntax:
+<input [value]="firstName">. Bindet Eigenschaft value zum Resultat des Ausdrucks firstName.
+<div [attr.role]="myAriaRole">. Bindet das Attribut role zum Resultat des Ausdrucks myAriaRole.
+<div [class.extra-sparkle]="isDelightful">. Bindet die Präsenz der CSS Klasse extra-sparkle auf dem Element
+zur Truhtiness des Ausdrucks isDelightful.
+<div [style.width.px]="mySize">. Bindet Stil Eigenschaft width zum Resultat des Ausdrucks mySize in Pixel.
+Einheiten sind optional.
+<button (click)="readRainbow($event)">. Ruft die Methode readRainbow auf wenn ein Click Ereigniss auf dem Knopf
+Element angetriggered wird und führt ihm das Ereignis Objekt ein.
+<div title="Hello {{ ponyName }}">. Bindet eine Eigenschaft zu einem interpolierten String, zum Beispiel, Hallo Seekeks.
+Gleichwertig mit <div [title]="'Hello ' + ponyName">.
+<p>Hello {{ ponyName }}</p>. Bindet den Text Inhalt zu einem interpolierten String, zum Beispiel, Hallo Seekeks.
+<my-cmp [(title)]="name">. 2 Wege Datenbindung. Gleichwertig mit <my-cmp [title]="name" (titleChange)="name=$event">.
+<video #movieplayer ...><button (click)="movieplayer.play()"></video>. Erstellt eine lokale Variable movieplayer
+welches Zugang zum video Element bietet in der Datenbindung und Ereignissbindung Ausdrücke im aktuellen Template.
+<p *myUnless="myExpression">...</p>. Das * Symbol verwandelt das aktuelle Element in ein eingebettetes Template.
+Gleichwertig mit: <ng-template [myUnless]="myExpression"><p>...</p></ng-template>.
+<p>Card No.: {{ cardNumber| myCardNumberFormatter }}</p>. Transformiert den aktuellen Wert
+des Ausdrucks cardNumber via dem Pipe myCardNumberFormatter.
+<p>Employer: {{ employer?.companyName }}</p>. Der Safe Navigation Operator (?). Auch früher der Elvis Operator bennant,
+bedeutet das employer Feld ist optional und wenn es undefined ist, wird der Rest des Ausdrucks ignoriert.
+<svg:rect x="0" y="0" width="100" height="100" />. Ein SVG snippet Template braucht einen svg: Prefix an seinem Wurzel Element,
+damit es von einem HTML Komponent dismabiguiert werden kann.
+<svg><rect x="0" y="0" width="100" height="100" /></svg>. Ein <svg> Wurzel Element wird als
+SVG Element automatisch identifiziert, ohne den Prefix.
+
+Eingebaute Direktiven:
+<section *ngIf="showSection"></section>. Entfernt oder erstellt eine Portion vom DOM Baum
+basierend auf den Wert von showSection.
+<li *ngFor="let item of list">. Verwandelt das li Element und sein Inhalt in ein Template, und nutzt dieses
+um eine Sicht für jedes Element in der Liste zu instanzieren.
+<div [ngSwitch]="conditionExpression">
+<ng-template [ngSwitchCase]="case1Exp">...</ng-template>
+<ng-template ngSwitchCase="case2LiteralString">...</ng-template>
+<ng-template ngSwitchDefault>...</ng-template>
+</div>. Basierend auf den Wert der Kondition wird der Inhalt getauscht vom div selektierend
+eine der eingebetteten Templates auf den Wert von conditionExpression.
+<div [ngClass]="{'active': isActive, 'disabled': isDisabled}">. Bindet die Präsenz der CSS Klassen auf dem Element
+zur Truthiness vom assozierten Map Wert. Die rechte Seite vom Ausdruck sollte wiedergeben: {class-name: true/false} map.
+
+Forms:
+<input [(ngModel)]="userName">. Liefert 2 Wege Datenbindung, Parsing und Validierung der Form Kontrollen.
+
+Klassen Dekoratoren:
+@Component({ ... }) class MyComponent() { }
+Deklariert das eine Klasse eine Komponente ist und liefert Metadaten von dieser Komponente.
+@Directive({ ... }) class MyDirective() { }
+Deklariert das eine Klasse eine Direktive ist und liefert Metadaten von dieser Direktive.
+@Pipe({ ... }) class MyPipe() { }
+Deklariert das eine Klasse ein Pipe ist und bietet Metadaten von dieser Pipe.
+@Injectable() class MyService() { }
+Dekalariert das eine Klasse Abhängigkeiten hat die in den Konstruktor injeziert werden sollen,
+wenn der Dependency Injektor eine Instanz von dieser Klasse erstellt.
+
+Direktiven Konfiguration:
+selector: '.cool-button:not(a)'. Spezifiert einen CSS Selektor welches die Direktive im Template identifiziert.
+Unterstützte Selektoren sind element, [attribute], .class und :not(). Unterstützt werden nicht Eltern-Kind Beziehungsselektoren.
+providers: [ MyService, { provide: ... }]. Liste von Dependency Injection Anbietern für diese Direktive und seine Kinder.
+
+Komponenten Konfiguration:
+moduleId: module.id. Wenn gesetzt, das templateUrl und styleUrl werden aufeglöst, relativ zu dieser Komponente.
+viewProviders: [ MyService, { provide: ... }]. Liste von Dependency Injection Anbietern die diese Komponente View umfasst.
+template: 'Hello {{ name }}', templateUrl: 'my-component.html'. Eingebettetes Template oder externes Template von der Komponente View.
+styles: ['.primary { color: red; }'], styleUrls: ['my-component.css']. Liste von eingebetteten CSS Stile oder
+externe CSS URL's um die Sicht der Komponente zu stylen.
+
+Klassen Feld Dekoratoren für Direktiven und Komponente:
+@Input() myProperty;. Deklariert eine Input Eigenschaft welche aktualisiert werden kann mit Eigenschaftsbindung.
+(Beispiel: <my-cmp [myProperty]="someExpression">).
+@Output() myEvent = new EventEmitter();. Deklariert eine Ouput Eigenschaft welches Ereienisse feuert an die man sich abonnieren kann,
+mit Ereigniss Bindung.(Beispiel: <my-cmp (myEvent)="doSomething()">).
+@HostBinding('class.valid') isValid;. Bindet eine Host Element Eigenschaft(hier die CSS Klasse valid) zu einer Direktive/Komponente Eigenschaft (isValid).
+@HostListener('click', ['$event']) onClick(e) { ... }. Abonniert an einen Host Element Ereigniss (click) mit einer Direktive/Komponente Methode
+( onClick ), optional wird ein Argument ($event) eingeführt.
+@ContentChild(myPredicate) myChildComponent;. Bindet das erste Resultat der Komponenten Inhalt Abfrage (myPredicate)
+zu einer Eigenschaft (myChildComponent) der Klasse.
+@ContentChildren(myPredicate) myChildComponents;. Bindet das Resultat der Komponenten Inhalt Abfrage (myPredicate)
+zu einer Eigenschaft (myChildComponents) der Klasse.
+@ViewChild(myPredicate) myChildComponent;. Bindet das erste Resultat der Komponenten Sicht Abfrage (myPredicate)
+an die Eigenschaft (myChildComponent) der Klasse.
+@ViewChildren(myPredicate) myChildComponents;. Bindet das Resultat der Komponenten Sicht Abfrage(myPredicate)
+an die Eigenschaft(myChildComponents) der Klasse.
+
+Direktiven und Komponente Change Detection Lebenszyklus Hooks:
+constructor(myService: MyService, ...) { ... }. Aufgerufen vor allen anderen Lebenszyklus Hooks.
+Nutze es um Abhängigkeiten reinzuinjizieren, aber vermeide jede seriöse Arbeit hier.
+ngOnChanges(changeRecord) { ... }. Aufgerufen nach jeder Änderung zun Input Eigenschaften und bevor Inhalt
+oder Kinder Sichten bearbeitet werden.
+ngOnInit() { ... }. Aufgerufen nach dem Konstruktor. Input Eigenschaften initialisierend.
+Und den ersten Aufruf zu ngOnChanges.
+ngDoCheck() { ... }. Aufgerufen jedes Mal wenn die Input Eigenschaften einer Komponente oder Direktive verifiziert werden.
+Nutze es um Change Detection zu erweitern um eine maßgeschneiderte Verifizierung durchzuführen.
+ngAfterContentInit() { ... }. Aufgerufen nach ngOnInit() wenn der Inhalt der Komponente oder Direktive
+initialisiert wurde.
+ngAfterContentChecked() { ... }. Aufgerufen nach jeder Verifizierung des Inhaltes der Komponente oder Direktive.
+ngAfterViewInit() { ... }. Aufgerufen nach ngAfterContentInit() wenn die Sicht der Komponente initialisiert wurde.
+Nur für Komponente valide.
+ngAfterViewChecked() { ... }. Aufgerufen nach jeder Verfizierung der Sicht der Komponente. Nur für Komponente gültig.
+ngOnDestroy() { ... }. Einmal aufegrufen, bevor die Instanz zerstört wird.
+
+Abhängigkeiten Injektion Konfiguration:
+{ provide: MyService, useClass: MyMockService }. Setzt oder überschreibt den Provider für MyService zu der MyMockService Klasse.
+{ provide: MyService, useFactory: myFactory }. Setzt oder überschreibt den Provider für MyService zu der myFactory factory Funktion.
+{ provide: MyValue, useValue: 42 }. Setzt oder überschreibt den Provider für MyValue zu dem Wert 42.
+
+Routing und Navigation:
+const routes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'path/:routeParam', component: MyComponent },
+  { path: 'staticPath', component ... },
+  { path: '**', component: ... },
+  { path: 'oldPath', redirectTo: '/staticPath' },
+  { path: ..., component: ..., data: { message: 'Custom' }}
+];
+const routing = RouterModule.forRoot(routes);. Konfiguriere Routen für die Applikation. Unterstützt statische,
+parameterisierte, umleitungen und wildcard Routen. Unterstützt auch maßgeschneiderte Routen mit Daten und Auflösungen.
+
+<router-outlet></router-outlet><router-outlet name="aux"></router-outlet>. Markiert den Ort wo die Komponente der aktiven Route geladen werden soll.
+<a routerLink="/path">
+<a [routerLink]="['/path', routeParam]">
+<a [routerLink]="['/path', { matrixParam: 'value' }]">
+<a [routerLink]="['/path',]" [queryParams]="{ page: 1 }">
+<a [routerLink]="['/path']" fragment="anchor">
+Erstellt Links zu den verschiedenen Sichten basierend auf eine Route Instruktion welches aus einem Route Pfad,
+erforderliche und optionale Parameter, abfrage Parameter, und ein Fragment. Um zu einer Route zu navigieren nutze den / Prefix;
+für eine Kind Route nutze den ./ Prefix; für ein Geschwister oder Eltern, nutze den ../ Prefix.
+
+<a [routerLink]="['/path']" routerLinkActive="active">. Die gelieferten Klassen werden dem Element hinzugefügt wenn der
+RouterLink die aktuelle Aktive Route wird.
+
+class CanActivateGuard implements CanActivate {
+  canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean>|Promise<boolean>|boolean { ... }
+}
+{ path: ..., canActivate: [CanActivateGuard] }
+Eine Schnittstelle um eine Klasse zu definieren die der Router zuerst aufrufen
+sollte um zu ermitteln ob diese Komponente aktiviert werden soll. Sollte einen Boolean oder einen Observable/Promise liefern welches sich
+in ein Boolean auflöst.
+
+class CanDeactivateGuard implements CanDeactivate<T> {
+  canDeactivate(component: T, route: ActivatedRouteSnapshot, state: RouterStateSnapshot):
+  Observable<boolean>|Promise<boolean>|boolean { ... }
+}
+
+{ path: ..., canDeactivate: [CanDeactivateGuard] }
+Eine Schnittstelle um eine Klasse zu definieren die der Router zuerst aufrufen sollte
+um festzustellen ob diese Komponente deaktiviert werden soll nach der Navigation. Sollte einen Boolean oder
+einen Observable/Promise liefern welches sich in ein Boolean auflöst.
+
+class CanActivateChildGuard implements CanActivateChild {
+  canActivateChild(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean>|Promise<boolean>|boolean { ... }
+}
+{ path: ..., canActivateChild: [CanActivateGuard], children: ... }
+Eine Schnittstelle um eine Klasse zu definieren die der Router zuerst aufrufen
+sollte um zu ermitteln ob diese Kind Route aktiviert werden soll. Sollte einen Boolean oder einen Observable/Promise liefern welches sich
+in ein Boolean auflöst.
+
+class ResolveGuard implements Resolve<T> {
+  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<any>|Promise<any>|any { ... }
+}
+{ path: ..., resolve: [ResolveGuard] }
+Eine Schnittstelle um eine Klasse zu definieren die der Router zuerst aufrufen
+sollte um Route Daten aufzulösen bevor die Route gerendered wird. Sollte einen Wert oder einen Observable/Promise liefern welches sich
+in einen Wert auflöst.
+
+class CanLoadGuard implements CanLoad {
+  canLoad(route: Route): Observable<boolean>|Promise<boolean>|boolean { ... }
+}
+{ path: ..., canLoad: [CanLoadGuard], loadChildren: ... }
+Eine Schnittstelle um eine Klasse zu definieren die der Router zuerst aufrufen
+sollte um zu verifizieren ob das Lazy Loaded Module geladen werden soll. Sollte einen Boolean oder einen Observable/Promise liefern welches sich
+in einen Boolean auflöst.
+
+
+
+zweiter paragraph:
+
+leitfrage:
+Eine Angular Schnell Referenz. Immer gut im Kopf zu haben, oder?
+
+bildpfad:
+code.jpg
+
+dritter paragraph:
+
+
