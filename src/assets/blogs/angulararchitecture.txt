@@ -1,0 +1,97 @@
+date: 27.1.2018
+title: Angular Architektur
+
+firstparagraph:
+Angular ist eine Plaform um Clientseitige Applikationen in HTML und JavaScript/Typescript zu bauen.
+Die Platform besteht aus einer Reihe von Bibliotheken, manche CORE, manche Optional.
+Wir schreiben unsere Angular Applikationen indem wir HTML Templates mit Angular Markup zusammenstellen,
+Komponenten Klassen schreiben um diese Vorlagen mit Leben zu füllen, schreiben Applikationslogik
+in die Dienste/Services und deklarieren diese Komponente und Dienste in Modulen.
+Dann starten wir die Applikation indem wir das Wurzel Module bootstrappen. Angular übernimmt, präsentiert
+unsere Applikationslogik im Browser und antwortet auf Nutzer Interaktionen mit den Instruktionen die wir eingebaut haben.
+Angular Applikationen sind modular und Angular hat sein eigenes Module System welches NgModules heißt.
+NgModule sind eine große Sache. Jede Angular Applikation hat wenigstens eine NgModule Klasse, den Root Module,
+der als AppModule konventionnel benannt wird. Während das Root Module das einzige Module in einer kleinen
+Applikation sein kann, haben die meisten Apps viele Feature Modules,
+jedes ein zusammenhängender Code Block einer Applikation Domäne gewidmet, einem WorkFlow oder einer naheliegenden Reihe von
+Fähigkeiten. Ein NgModule, ob ein Root oder Feature, ist eine Klassemit dem @NgModule Dekorator.
+Dekoratoren sind Funktionen die JavaScript Klassen modifizieren. Angular hat viele Dekoratoren, die Metadaten den Klassen
+hinzufügen, so dass es weiß was diese Klassen bedeuten und wie sie funktionieren sollen.
+NgModule ist eine Dekorator Funktion welches ein einzelnes Metadaten Objekt nimmt dessen Eigenschaften das Module beschreiben.
+Die wichtigsten Eigenschaften sind: 1. declarations => Die Sicht Klassen die diesem Module angehören, Angular hat 3 Typen von Sicht Klassen,
+Components, Directives und Pipes. 2. exports => Der Satz von Deklarationen der Sichtbar und Nutzbar in den Komponenten Templates von anderen
+Modulen seien soll. 3. imports => Andere Module welche exportierten Klassen in den Komponenten Templates dieses Modules gebraucht werden.
+4. providers => Ersteller von Diensten welches dieses Module zur Globalen Sammlung von Diensten beiträgt. Die sind in der ganzen Applikation verwendbar.
+5. bootstrap => die Hautptapplikations Sicht, der Root Component genannt, welches alle anderen Applikations Sichten beherbergt. Nur das Root Module sollte
+die bootstrap Eigenschaft setzen.
+Angular Bibliotheken. Angular wird als eine Sammlung von Bibliotheken geliefert. JavaScript, Node Module. Es sind Bibliotheks Module.
+Jede Angular Bibliothek beginnt mit dem @angular Prefix. Wir laden die runter und installieren die mit dem NPM oder Yarn Packet Manager,
+und importieren die Teile die wir brauchen mit import Befehlen.
+Angular Components. Eine Komponente kontrolliert einen Teil vom Schirm benannt eine Sicht. Wir definieren die Applikationslogik einer Komponente in einer Klasse,
+Die Klasse interagiert mit der Sicht durch eine API von Eigenschaften und Methoden.
+Angular Templates. Die Sicht oder das HTML. Die Sicht sagt Angular wie die Komponente dargestellt werden soll.
+In der Sicht können wir Angular Direktiven und Datenbindungs Techniken einbauen wie *ngFor, *nIf, {{ }}, (click), [held],
+<held-detail>. Das nennt man die Template Syntax von Angular. <held-detail> ist ein maßgeschneidertes Element welches eine neue Komponente repräsentiert.
+Metadaten sagen Angular wie eine Klasse verarbeitet werden soll. Metadaten werden in TypeScript mit einem Dekorator hinzugefügt.
+Der @Component Dekorator identifiziert die drunterliegende Klasse als eine Komponenten Klasse. Der @Component Dekorator nimmt ein gefordertes Konfigurationsobjekt welches
+Angular braucht um die Komponente zu kreieren und präsentieren mit seiner Klasse und Sicht.
+Hier sind einige der Nützlichsten @Component Konfigurations Optionen. 1. selector => ein CSS Selektor welches Angular sagt eine Instanz dieser Komponente zu kreieren und einzufügen wo es das Element findet
+im HTML. 2. templateUrl => Module-Relative Addresse der Sicht dieser Komponente. 3. providers => Eine Kollektion von Dependency Injektion Providers für Dienste die diese Komponente benötigt. Dieses ist eine Methode Angular
+bescheid zu sagen dass der Konstruktor dieser Komponente einen HeldenPolizeiDienst benötigt um eine Liste von den Kriminellen darzustellen. Die Metadaten in der @Component sagen wo die Haupt Bauklötze zu holen sind die für die Komponente spezifiziert sind.
+Das Template, Metadaten und die Komponente zusammen beschreiben die gerenderte Sicht. Einige weitere beliebte Metadaten Dekoratoren sind: @Injectable, @Input, @Output.
+Angular Datenbindung. Ohne einen Rahmen/Platform wären wir mit der Aufgabe verantwortet Daten in die HTML Kontrollen zu schieben und Nutzer Interaktionen in Aktionen und Daten Aktualisierungen zu verwandeln.
+Solche push/pull Logik schreiben per Hand ist mühselig, fehlerhaft und ein Alptraum zu lesen wie wir alle wissen, das ist das jQuery phenomän. Angular unterstützt Datenbindung, ein Mechanismus Teile der Komponente mit der Sicht zu koordinieren.
+Wir fügen Bindungs Markup hinzu um Angular zu sagen wie das JavaScript mit dem HTML zu verbinden.
+Es gibt 4 Formen der Datenbindung. Jede Form hat eine Richtung: zum DOM, vom DOM oder in beide Richtungen.
+1. {{ held.name }} => Interpolation zeigt die Eigenschaft der Komponente held.name in der Sicht an.
+2. [ held ] => Eigenschaft Bindung bindet den Wert der Eltern Komponente mit der Eigenschaft der Kind Komponente.
+3. ( click ) => Ereigniss Bindung bindet die Methode der Komponente mit dem Click Ereigniss des Elementes in der Sicht.
+4. [(ngModel)] => 2 Wege Datenbindung, nutzt Eigenschaftsbindung mit Ereignissbindung in eine eleganten Notation.
+Angular verarbeitet alle Datenbindungen einmal pro JavaScript Zyklus, von der Wurzel der Applikations Komponenten Baum durch alle Kinder Komponenten.
+Angular Direktiven. Angular Templates sind dynamisch. Wenn Angular die darstellt, wird die DOM transformiert basierend auf den Instruktionen von den Direktiven gegeben.
+Eine Direktive ist eine Klasse mit dem @Directive Dekorator. Eine Komponente ist eine Direktive mit einer Sicht.
+Es gibt strukturelle und attribut Direktiven. Strukturelle Direktiven verändern das DOM indem hinzugefügt, entfernt und ersetzt wird.
+Beispiele sind *ngFor und *ngIf. *ngFor sagt Angular ein neues Element hinzuzufügen und *ngIf basierend auf einer Kondition fügt hinzu oder entfernt.
+Attribut Direktiven. Ändern die Sicht oder das Verhalten eines existierenden Elementes. ngModel Direktive ist ein Beispiel. ngSwitch, ngStyle und ngClass.
+Dienste/Services. Ein Dienst tut etwas spezifisches und tut es sehr gut. Fokussiert. Komponenten Klassen sollten dünn sein. Man kann weiter in Presentational Components
+und Container Components gliedern. Komponenten holen keine Daten vom Server, validieren Nutzer Eingaben, oder zu der Konsole loggen.
+Diese Aufgaben werden an einen Dienst delegiert. Der Job einer Komponente ist die Nutzer Erfahrung zu gestalten. Es ist die Mediation zwischen dem HTML und der Applikations Logik, JavaScript.
+Eine gute Komponenten bietet Eigesnchaften und Methoden für die Datenbindung. Alles andere wird an einen Dienst delegiert.
+Die Applikations Logik, also die Business Logik, Domänen Logik sollte in einen Diesnt ausgelagert werden und mit dem Dependency Injection Framework
+von Angular in die Komponente injiziert werden.
+Dependency Injection ist ein Weg neue Instanzen einer Klasse in eine Komponente einzufügen so dass alles lose gekoppelt ist.
+Wenn Angular eine Komponente kreiert, wird zuerst der Injektor gefragt für die Dienste die die Komponente braucht.
+Der Injektor behält einen Container von Dienst Instanzen. Wenn ein geforderter Dienst sich nicht im Container befindet,
+macht der Injektor einen und fügt es dem Container hinzu, bevor der Dienst an Angular gegeben wird.
+Man registriert einen Dienst im Provider Array des Modules. Entweder global im AppModule oder in den Feature Modulen.
+Dependency Injektion ist in der Angular Platform eingebacken.
+Der Injektor ist der Hauptfunktions Mechanismus.
+Ein Provider ist ein Rezept um einen Dienst zu erstellen.
+Registriere die Providers mit den Injektoren.
+Die Hauptbausteine einer Angular Applikation sind: 1. Module 2. Komponente 3. Templates 4. Metadaten
+5. Datenbindung 6. Direktiven 7. Dienste 8. Dependency Injection.
+Hier sind weitere Features und Dienste die die Angular Platform bietet:
+1. Animationen: Animiere Komponente Verhalten ohne ein tiefes Wissen von Animations Techniken oder CSS mit der Animations Bibliothek von Angular.
+2. Change Detection: Angular entscheidet wie der Wert einer Komponenten Eigenschaft sich geändert hat, wann der Schirm aktualisiert werden soll,
+und wie zones genutzt werden um asynchrone Aktivitäten abzufangen und seine Change Detection Strategien abzulaufen ist.
+3. Ereignisse: Nutze Komponenten und Dienste um Ereignisse zu erstllen mit Mechanismen, zu publizieren und abonnieren.
+4. Forms: Unterstützt komplexe Daten Eingabe Szenarien mit HTML basierte Validierung und dirty checking.
+5. HTTP: Kommuniziere mit einem Server um Daten zu holen, Daten speichern und Server Seite Aktionen aufzurufen mit dem HTTP Client.
+6. Lebenszyklus Hooks: Greife ein in Schlüßel Momente im Leben einer Komponente. Von seiner Geburt bis zu seinem Tod. Die Lebenszyklus Hooks implementierend.
+7. Pipes: Nutze Pipes um die Daten in der Sicht zu transformieren.
+8. Router: Navigiere von Seite zu Seite in Deiner Applikation und verlasse nie Deinen Browser.
+9. Testing: Lasse Unit Tests laufen mit Karma/Jasmine, sowie E2E Tests mit Protractor, nutze die Angular Testing Platform um die Qualität deiner Applikation zu sichern.
+
+
+
+
+
+leadquestion: Ich mag keine Architekten. Luftschlößer bauen. Reden ist billig, zeige mir den Code, und Du?
+
+secondparagraph:
+
+
+imagepath: architecture.jpg
+
+thirdparagraph:
+
