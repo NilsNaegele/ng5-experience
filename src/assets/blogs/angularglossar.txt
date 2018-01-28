@@ -1,0 +1,157 @@
+datum: 28.01.2018
+titel: Angular Glossar
+erster paragraph:
+1. Ahead Of Time (AOT) Kompilierung. Wir können unsere Applikation zur Bauzeit kompilieren.
+Den Compiler-CLI, ngc, nutzend, kann direkt mit einer Module Factory gestartet werden,
+der Angular Compiler wird nicht im JavaScript Bündel eingefügt. Die Ladezeit der Applikation
+ist schneller und die Leistung gesteigert.
+2. Annotation das gleiche wie Dekoration.
+3. Attribut Direktiven. ngClass ist ein Beispiel. Diese Kategorie von Direktiven hören und verwandeln
+andere HTML Elemente, Attribute, Eigenschaften und Komponenten.
+4. Barrel. Nicht mehr aktuell. Ein Weg Exporte von mehreren ES2015 Modulen in ein ES2015 Module
+einzufügen welches alle exportieren kann.
+5. Bindung. Datenbindung mit gemeint. Der Akt ein HTML Objekt Eigenschaft mit einer Daten Objekt
+Eigenschaft zu verbinden.
+6. Bootstrap. Wir starten unsere Angular Applikation das Root NgModule, AppModule nutzend.
+Bootstrapping identifiziert den Root Component, welches das erste Komponent ist welches für
+die Applikation geladen wird.
+7. camelCase. Der erste Buchstabe wird klein geschrieben. Jedes weitere Wort fängt mit einem
+großen Buchstaben an. Zum Beispiel: heldenPolizei, verhaftungsDienst, opfer.
+8. Angular CLI. Die CLI ist eine Command Line Interface Werkzeug um ein neues Projekt zu erstellen.
+Neue Dateien hinzuzufügen, testen, bündeln und Deployen.
+9.Komponente. Eine Angular Klasse verantwortlich eine Sicht darzustellen, und die Nutzer Interaktionen
+zu dirigieren. Die Komponente ist einer der wichtigsten Bausteine im Angular System. Es ist im Grunde genommen
+eine Direktive mit einer Sicht. Füge den @Component Dekorator zu der Komponenten Klasse hinzu,
+damit werden die wesentlichen Metadaten welche Angular braucht um eine Komponenten Instanz zu kreieren und
+die Komponente mit ihrer Sicht im Browser zu rendern.
+10. dash-case. Wörter werden mit einem Minus getrennt. Auch als kebab-case bekannt.
+11. Datenbindung. Die Angular Applikation zeigt Daten an und reagiert auf Nutzer Interaktionen, clicks, touches,
+Tasteneingaben. Angular hat einen reichen Datenbindungs Rahmen mit vielen Operatoren und deklarativer Syntax.
+Interpolation. Eigenschaftsbindung. Ereignissbindung. Attributbindung. Klassenbindung. Stilbindung.
+Zwei-Wege Bindung.
+12. Dekoratoren. Eine Funktion welche Metadaten einer Klasse hinzufügt. Seinen Gliedern (Eigenschaften, Methoden),
+und Funktions Argumenten. @Component, @Directive, @Input, @Output, @Inject sind Beispiele von Dekoratoren.
+13. Dependency Injection. Ein Design Pattern und Mechanismus um Teile einer Applikation anderen zu liefern die diese anfordern.
+Zur Laufzeit werden die Teile miteinander verdrahtet. Das Angular Dependency Injektions System löst alle Abhängigkeiten
+auf und führt sie elegant in die fordernde Komponente ein. Im CORE, liefert ein Injektor Abhängigkeiten zurück die
+angefordert wurden. Ein Provider ist ein Rezept um neue Instanzen eines Abhängigkeit Wertes mit seinem assozierten Token zu erstellen.
+14. Direktive. Die Direktive ist das Fundament von Angular. Eine Angular Klasse um zu erstellen, verwandeln, interagieren mit
+HTML Elementen im Browser DOM. Eine Direktive ist normalerweise assoziert mit einem HTML Element oder Attribut.
+Das Element oder Attribut ist oft als die Direktive selbst referenziert. Wenn Angular in der Sicht eine Direktive findet
+wird eine gepaarte Direktiven Klassen Instanz kreiert und der Instanz wird die Kontrolle über die Portion vom DOM gegeben.
+Wir können maßgeschneidertes HTML bauen, wie zum Beipiel <meine-direktive> um mit unserer maßgeschneiderten Direktive zu koppeln.
+Wir fügen dieses maßgeschneiderte HTML zu der Sicht hinzu als ob wir natives HTML schreiben würden. Auf diese Weise sind Direktiven eine Erweiterung
+vom HTML selbst. Direktiven gehören in eine dieser Kategorien. Komponente: kombinieren Applikationslogik mit einer HTML Sicht
+um die View zu rendern. Komponente sind in der Regel als HTML Elemente repräsentiert. Sie sind ein Baustein unserer Angular Applikationen.
+Attribut Direktiven: hören und verwandeln das Verhalten von von anderen HTML Elementen, Attributen, Eigenschaften und Komponenten.
+Die werden normalerweise als HTML Attribute dargestellt, deswegen der Name. Strukturelle Direktiven: sind für die Gestaltung,
+Umgestaltung des HTML Layouts verantwortlich, können hinzufügen, entfernen, oder Element und deren Kinder manipulieren.
+15. ECMAScript. Die offizielle JavaScript Sprache Spezifizierung. ECMAScript2017 ist die neueste, ratifizierte Version von JavaScript.
+Auch als ES2017 oder ES8 bekannt. Viele Angular Entwickler schreiben Ihre Applikation in ES8 oder einen Dialekt wie zum Beispiel TypeScript.
+Die meisten modernen Browser unterstützen nur ECMAScript 5 standard absichtlich. Da müßte das Gesetz einschreiten dem unlauteren Wettbewerb ein Ende zu setzen.
+Applikationen in ES2017, ES2016 oder ES2015 geschrieben müßen zu ES5 JavaScript transpiliert werden. Die Jungs von Microsoft verdienen an der Geschichte nichts und versuchen
+auf diesem Weg den Fortschritt der Menschheit zu blockieren/hemmen. Ihre Monopolstellung in den Unternehmen versuchen Sie auch im Internet zu forcieren. Die sind zum scheitern verurteilt,
+können aber in der Zwischenzeit mit Ihren Bowsern Internet Explorer und Edge JavaScript Fortschritt Entwicklung blockieren. Indem die sich einfach an keine Standards halten.
+Angular Entwickler können  Ihre Applikation auch direkt in ES5 schreiben.
+16. ES2015. Abkürzung für ECMAScript 2015.
+17. ES5.  Abkürzung für ECMAScript 5, die Version die in den meisten modernen Browsern läuft.
+18. ES6. Abkürzung für ECMAScript 2015.
+19. Injektor. Ein Objekt im Angular Dependency Injection System welches eine benannte Abhängigkeit finden kann in seinem Lager oder mit einem registrierten Provider.
+20. Input. Eine Direktiven Eigenschaft welches das Ziel von einer Eigenschaftsbindung sein kann. Daten fließen in diese Eigenschaft von der Daten Quelle
+auf der rechten Seite der Gleichung identifiziert.
+21. Interpolation. Eine Form von Eigenschafts Daten Bindung in dem ein Template Ausdruck mit doppelten geschweiften Klammern als Text in der Sicht gerendert wird.
+22. Just-In-Time (JIT) Kompilierung. Eine Bootstrapping Methode die Komponenten und Module im Browser zu kompilieren und die Applikation dynamisch zu starten.
+Just-In-Time ist in der Entwicklungsphase eine gute Lösung, für Produktions Applikationen sollte AOT verwendet werden. Der Standard in der Angular CLI.
+23. kebab-case. Mit einem Minus Wörter voneinander zu separieren.
+24. Lebenszyklus Hooks. Direktiven und Komponente haben einen Lebenszyklus der von Angular geleitet wird während es erstellt, aktualisiert und die zerstört.
+Wir können ind kritische Momente in diesem Lebenszyklus einwirken die Schnittstellen implementierend.
+In dieser Reihenfolge werden die Hooks aufgerufen:
+1. ngOnChanges: wenn eine Eingabe/Ausgabe Wert sich ändert.
+2. ngOnInit: nach dem ersten ngOnChanges.
+3. ngDoCheck: Entwicklers maßgeschneiderte Change Detection.
+4. ngAfterContentInit: nachdem der Inhalt der Komponente initialisiert wurde.
+5. ngAfterContentChecked: nach jeder Kontrolle des Inhalts der Komponente.
+6. ngAfterViewInit: nachdem die Sicht einer Komponente initialisiert wurde.
+7. ngAfterViewChecked: nach jeder Kontrolle der Sicht einer Komponente.
+8. ngOnDestroy: unmittelbar bevor die Direktive zerstört wird.
+25. Module. Angular Applikationen sind Modular. Eine Applikation vereint viele Module die wir selber geschrieben haben
+oder von externen Quellen.Ein Modul exportiert was von Wet wie zum Beipiel eine Klasse oder Funktion. Ein anderes Modul
+kann dieses importieren. Die Struktur von NgModules und die import/export Syntax ist auf den ES2015 Module Standard basiert.
+Eine Applikation welches sich an diese Standards hält benötigt einen Module Lader um geforderte Module zu laden und Inter Module
+Abhängigkeiten aufzulösen. Angular bringt keinen Module Loader zu Tische und hat keine Vorliebe für irgendeine 3 Anbieter Bibliothek.
+Wir können jede Module Bibliothek nutzen die sich an die abgemachten Standards hält.
+Wir importieren unsere Angular Modulevon einem scoped Angular Paket wie zum Beispiel: @angular/core.
+26. NgModule hilft uns unsere Applikation in zusammenhängende Funktionsblöcke zu gliedern. Ein NgModule identifiziert
+die Komponenten, Direktiven und Pipes welches unsere Applikation nutzt mit einer Liste von externen NgModulen welches die Applikation
+braucht wie das FormsModule. Jede Angular Applikation hat eine Applikations Root Module Klasse, nach unserer Konvention wird die AppModule genannt.
+27. Observables. Eine Liste von Elementen die asynchron über die Zeit ankommen. Observables sind nützlich asynchrone Daten zu häandeln. wie
+zum Beispiel Daten die von einem Backend Dienst strömen. Angular nutzt die Observables auch aus, im RouterModule, HTTPClient Module
+sowie im Ereigniß System. Um die Observables auszunutzen wird eine externe Bibliothek RxJS eingesetzt.
+28. Output. Eine Direktiven Eigenschaft kann das Ziel einer Ereignißbindung sein. Ereignisse strömen aus dieser Eigenschaft zum Empfänger
+identifiziert im Template Ausdruck auf der rechten Seite der Gleichung.
+29. PascalCase. Jedes Wort oder Fragment fängt mit einem großen Buchstaben an.
+30. Pipe. Eine Angular Pipe ist eine Funktion die den Eingabe Wert umwandelt zur Datentransformation in der Sicht.
+31. Provider. Ein Povider erstellt eine neue Instanz der Abhängigkeit für das Angular Dependency Injektions System.
+Ein Lookup Token wird mit dem Code verbunden, manchmal auch ein Rezept genannt, welches einen Abhängigkeits Wert kreieren kann.
+32. Reactive Forms. Eine Technik um Angular Formulare zu bauen mit Code in einer Komponente. Die Alternative Technik ist Template-Driven Forms.
+Wenn man Reactive Forms baut sollte man folgendes beachten:
+1. Die Quelle der Wahrheit ist die Komponenten Klasse. Die Validierung wird definiert den Code in der Komponente nutzend.
+2. Jede Kontrolle wird explizit in der Komponenten Klasse erstellt, new FormControl() mit dem FormBuilder.
+3. Die Template Eingabe Elemente nutzen nicht ngModel.
+4. Die assozierten Angular Direktiven haben alle den Prefix Form, wie FormGroup, FormControl, und FormControlName.
+Reaktive Formulare in angular sind mächtig um flexibel, und eine schöne Wahl für komplexe Daten Eingabe Szenarien, wie die dynamische
+Generierung von Form Kontrollen.
+33. Router. Die meisten Applikationen bestehen von vielen Seiten und Sichten. Der Nutzer navigiert zwischen Ihnen indem er auf
+Links, Schaltflächen klickt und andere ähnliche Aktionen machend  die die Applikation dazu führen eine Sicht mit der Anderen zu tauschen.
+Der Angular Komponenten Router ist ein reichlich bestückter Mechanismus zur
+Konfigurierung und Verwaltung des ganzen Sicht Navigation Prozesses, einschließlich der Erstellung udn Terminierung von den Sichten.
+Das Template einer Routing Komponente hat ein RouterOutlet Element wo die Sichten dargestellt werden können die
+vom Router produziert wurden. Andere Sichten in der Applikation haben Anchor Tags oder Knöpfe mit einer RouterLink
+Direktive welches die Nutzer clicken können um in der Applikation elegant zu navigieren.
+34. RouterModule. Ein eigenständiges NgModule welches die nötigen Dienst Anbieter und Direktiven
+liefert um durch die Applikation Sichten zu navigieren.
+35. Routing Komponente. Eine Angular Komponente mit einem RouterOutlet welches Sichten darstellt basierend auf die Routen Navigationen.
+36. Scoped Package. Eine Methode NPM Pakete zu gruppieren. NgModule werden in scoped packages geliefert, wie:
+@angular/core, @angular/common, @angular/platform-browser-dynamic, @angular/http und @angular/router.
+37. Service/Dienst. Für Daten und Logik welches nicht mit einer spezifischen Sicht assoziert ist oder welches in der gesamten Applikation
+geteilt werden soll, bauen wir Dienste. Applikationen benötigen oft Dienste wie ein Helden Daten Dienst oder ein Logging Dienst.
+Ein Dienst ist eine Klasse mit einer fokussierten Aufgabe.
+38. snake_case. Die Wörter mit einem Underscore voneinander trennen.
+39. Strukturelle Direktiven. Eine Kategorie von Direktiven, welches das HTML Layout formen und umformen können, hinzufügen, entfernen von Elementen
+im DOM. Der *ngIf Konditionnelle Element Direktive und der *ngFor "Wiederholer" Direktive sind bekannte Modelle.
+40. Template. Eine Portion HTML welches Angular nutzt um eine Sicht darzustellen mit der Unterstützung und Leitung einer Angular Direktive, einer Komponente meistens.
+41. Template-DRIVEN Forms. Eine Technik um Angular Formulare zu bauen mit HTML Forms und Eingabe
+Elementen in seiner Sicht. Die alternative Technik ist Reactive Forms.
+Wenn wir Template-DRIVEN Formulare bauen:
+1. Die Quelle der Wahrheit ist die Sicht. Die Valdidierung wird definiert Attribute nutzend die auf den einzelenen Eingabe Elementen sitzen.
+2. Zwei Wege Daten Bindung wird mit ngModel realisiert umd das Model der Komponente mit den Nutzer Eingaben zu synchronsieren.
+3. Hinter der Szene, erstellt Angular Kontrollen für jedes Eingabe Element, vorrausgesetzt wir haben einen Namen Attribut und Zwei Wege Bindung
+für jedes Eingabe Element definiert.
+4. Die assozierten Angular Direktiven sind alle mit ng geprefixed wie ngForm, ngModel und ngModelGroup.
+Template-GETRIEBENE Formulare sind nützlich, schnell und einfach. Sie sind eine gute Wahl für simple Daten Eingabe Szenarien.
+42. Template Ausdrucke. Eine TypeScript ähnliche Syntax welches Angular mit Datenbinding evaluiert.
+43. Transpile. Der Prozess den Code der in einer Version von JavaScript geschrieben wurde in eine alte Version zu verwandeln.
+44. TypeScript. Eine Version von JavaScript welches die meisten Features wie Dekoratoren von ECMAScript 2015 unterstützt.
+TypeScript bietet auch starke Typisierung and für Bauzeit Kontrollen und starkes Werkzeug Unterstützung. Code Completion, Refactoring,
+und Intelligente Suche. TypeScript ist in unserer Angular Entwicklung bevorzugt und standardisiert.
+45. View. Eine Portion des Schirms, die Sicht, umd Informationen darzustellen und auf Nutzer Interaktionen zu reagieren,
+wie Clicks, Mouse Bewegungen, und Tastenstreiche. Angular rendert die Sicht unter der Kontrolle von einer
+oder mehreren Direktiven, vor allem Komponenten Direktiven und ihre Sicht.
+Die Komponente spielt so eine prominente Rolle, dass man die Sicht auch als Komponente bezeichnen kann.
+Sichten beherbergen oft andere Sichten. Jede Sicht kann geladen und ungeladen werden während sich der Nutzer durch die Angular Applikation bewegt,
+normalerweise under der Kontrolle des Angular Komponenten Routers.
+46. Zone. Ein Mechanismus zur Einkapselung und zum Abfangen von der Asynchronen Aktivät von JavaScript.
+Der Browser DOM und JavaScript haben eine begrenzte Anzahl von asynchronen Aktivitäten,
+wie zum Beispiel Clicks, Promises, und XHR Aufrufe an entfernte Server. Zones fangen dieses alles ab,
+und geben einem Zone Kunden die Gelegenheit Aktion zu unternehmen bevor und nach der Asnychronen Aktivität.
+Angular steuert unsere Applikation in einer Zone wo es auf Asynchrone Ereignisse reagieren kann,
+Daten Änderungen überprüfend und die Information aktualisierend die es anzeigt mit Daten Bindungen.
+
+leit frage: Angular hat sein eigenes Vokabular. Kennst Du seine Terminologie?
+
+zweiter paragraph:
+
+bild pfad: brain.jpg
+
+dritter paragraph:
+
